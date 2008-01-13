@@ -1,0 +1,424 @@
+/*===========================================================
+	project		:	r2000pl Pipelined 
+	description	:	Simple Pipelined Mips 32 bits processor
+=============================================================
+	file name	:	release.txt
+=============================================================
+	designer	:	Abdallah Meziti ElIbrahimi
+	mail 		: 	abdallah.meziti@gmail.com
+=============================================================*/
+Table of Contents
+-----------------
+1/-description
+2/-configuration
+3/-revisions
+
+---------------------------------
+1/-description :
+---------------------------------
+- Developpement of the R2000 Mips risc processor.
+- The processor is based on the following books:
+	-[1]Computer Orginization and Design
+		3 rd edition
+		D. A. Patterson & J. L. Hennessy
+	-[2]See MIPS Run (Linux)
+		Second Edition
+		Dominic Sweetman
+	-[3]Logic and Computer Design Fundamentals
+		2 nd edition
+		M. M. Mano & C. R. Kime
+	-[4]Advanced Digital Design with the VERILOG HDL
+		M. D. Ciletti
+	-[5]Computer Architecture Complexity and Correcteness
+		S. M.Mueller & W. J.Paul
+	-[6]Correcteness of a Mechanism for Precise Nested Processing of Interrupts in Pipelined Designs
+		S. M.Mueller & R. Knuth
+	
+
+- The gcc mips_elf is used as compiler
+- The processor is tested under modelsim SE 6.0c
+
+---------------------------------
+2/-configuration :
+---------------------------------
+For viewing the source code correctly,
+use this configuration in your texte editor
+	- Font		: Courier New 
+	- Size		: 10
+	- Tab size	: 4
+
+---------------------------------
+3/-revisions :
+---------------------------------
+---------------------------------
+revision 	:	rev 0
+date 		: 	nov 2006
+---------------------------------
+- Writing the behavioral ISA R2000 model of the processor (without the CP0)
+- Test the model with C programms:
+	- Test of instructions (assembler)
+	- calcul of some decimals of pi
+	- calcul the euclids GCD
+
+---------------------------------
+18-11-2006
+- Reorganization of the project file
+- Making some libraries;
+	- print
+	- integer calcul
+---------------------------------
+24-11-2006
+- Beginning the Single Cycle implementation of the Mips
+	[1] Fig 5.24 p.314
+
+---------------------------------
+revision 	:	rev 1
+date 		: 	28-11-2006
+---------------------------------
+28-11-2006
+- Extension and beginning of implementation of the rest of R2000 instruction
+- Writing the logic barrel Shifter [3]. Make some modification for the Arithmetic shift
+
+28-11-2006
+- Adding the multiplier/divisor unit
+
+01-12-2006
+- integreting all units in the Single Cycle Intruction Core
+- the multiplier/divisor will be replaced be the % and * instruction during simulation
+
+03-12-2006
+- fixing some bugs
+- all the R2000 compatible instructions are implemented 
+	but there's some probleme with
+		- data memory endialess problem
+		- the mult/div doesn't work very well
+
+07-12-2006
+- fixing bugs on the multiplier/divisor modules
+- integrate the "INTERLOCK" fonction for multiplie/divide operations
+	- PC is stopped when the mult/div operation and whant to read lo or hi registers
+08-12-2006
+- testing the processor with pi C programm
+- fixing some bug's by comparing the registers with the behavioral model
+- synthesize the processor and about to simulate the post-synthesize and post-route model
+11-12-2006
+- fix some bug on the behavioral model:
+	operands are treated as unsigned on sltiu, sltu, slti
+15-12-2006
+- developpement of $watch_data_hex () a PLI function for debbuging C fonction with MIPS_behavioral verilog core
+	- the system use the real break points of the simulateur
+	- compare the PC register with a value to break to
+	- call the PLI function $watch_data_hex () to dump the variables from memory indicating in WatchVar.txt file
+	- possibility of visualising scalaire, array, char, int, long
+
+- fix bug : error in generating the initial stack pointer when using convert_bin.c
+		- using $watch_data_hex () for debugging
+		- the correction is with using convert_mips.c
+		- Soft\Mips\tools	
+
+16-12-2006
+- begin to rewrite a proper code according to the "OpenCores Coding Guidelines" rev.1.2
+- use the recommended directory structure
+- 
+ 
+---------------------------------
+revision 	:	rev 2 r2000pl
+date 		: 	19-12-2006
+---------------------------------
+- Begining the design of the pipeline version of the the r2000sc and will be the r2000pl
+- 
+
+20-12-2006
+- Hand drawing the basic pipeline model of the r2000pl
+	- the draw contains the basic pipeline with
+		- no stall
+		- no forwarding
+		- no interlock
+		- no CP0
+
+22-12-2006
+- Writing the r2000pl pipeline verilog model
+	- the core is 5 pipeline stages
+	- the reducing delay branch was used (let the processor with one branch delay slot)
+	- no forward, no stall was implemented yet (this is the next step)
+	
+23-12-2006
+- Adding the forwarding unit
+- Adding the Hazard detection unit
+- Modifying the clock edge of the register file to negedge
+
+24-12-2006
+- In the Mult/Div Module:
+	- Including the "start" signal in the ready signal
+- In the reg Module:
+	- The reset is now synchronous to prevent gliths from logics modul like "Hazard"
+- In branch with link:
+	- the value of pc to store is pc + 8. because p + 4 instruction is executed during delay slot
+- Forwarding Unit:
+------------------
+	- Cause we reduced the delay branch, so moved the registers compartors from the "EX stage" to "ID stage"
+		- we need to forward register result to the comparator in the "ID stage"
+		- the comparator will have the wright value to compare
+		- we will move the forwarding unit to the "ID stage"
+		
+	- Moving the Forwarding unit in the ID stage
+		- the comparaison is : (ID_rs_index, ID_rt_index) compare (EX_rd_index) or (MEM_rd_index) or (WB_rd_index)
+		- the data back come from EX or MEM or WB stages
+		- moving the "r2000_mux7 mux_reg_w" into the EX stages
+		- adding a 2 way mux in the MEM stages for the result (result write back to regfile from memory or execution)
+		- OK tested with the "opcodes.s" programm 
+
+25-12-2006
+- fix some bug on the opcodes.s assembler instruction test soft
+- With the new forwarding unit put the clock registerfile
+	- on the posedge for simulation
+	- on the negedge for placement/route
+- Test the model with C programms:
+	- Test of opcodes (assembler)	=> OK
+	- calcul of some decimals of pi	=> OK
+	- calcul the reed solomon		=> OK
+	- dhrystone test Version 2.1	=> OK
+ 
+
+---------------------------------
+revision 	:	rev 3 r2000pl
+date 		: 	28-12-2006
+---------------------------------
+28-12-2006
+- Beginning to develop memory controler wich can interface with one bus memory (SRAM for data, FLASH for code)
+	- multiplexed ONE BUS MEMORY is used for booth CODE(FLASH) & DATA(SRAM)
+	- adding mem_ctrl which control the bus memory with the cpu
+	- adding delay to select tge SRAM and FLASH in the mem_ctrl for behavioral simulation
+
+	- simulation behavioral OK
+	- simulation gate NOK => glitch on SRAM control signals
+
+29-12-2006
+- Use the true verilog model of IDT71V416S Asynchronous SRAM
+- Now use one SRAM memory for both data & code
+	- simulation behavioral OK
+	- simulation gate NOK => glitch on SRAM control signals
+	- THIS IS THE DIFFICULTY OF THE ASYNCHRONOUS SRAM CONTROL
+	
+30-12-2006
+- Thinking about using I-CACHE and D-CACHE to speed up the processor
+	without the need of using directly the Asynchronous SRAM.
+	- using the WISHBONE bus for sharing the A-SRAM between the 2 caches
+31-12-2006
+- Studying the cache fonctionnement and the WISHBONE bus spec.
+
+05-01-2007
+- Design of the datapath of a simple cache
+	- direct-mapping
+	- write back
+	- valid, tad, dirty tags
+	- read asynchronously, write synchronously
+
+10-01-2007
+- Write the Algorithmic State Machine of the cache
+
+15-01-2007
+- Writing the verilog model of the cache
+	- simulation under modelsim
+	- simples test OK
+
+02-04-2007
+- Snap Shoot before integrate the I-Cache D-Cache with the CPU
+
+---------------------------------
+revision 	:	rev 4 r2000pl
+date 		: 	02-04-2006
+---------------------------------
+- Integrate an behavioral model of I-Cache and D-Cache
+
+09-04-2007
+- Integration of the i-cache:
+	- the hit signal is connected to with Interlock (have to test that more deeply)
+	- 
+- Modification on the SRAM: is now synchronous
+- Test the model with C programms:
+	- Test of opcodes (assembler)	=> OK
+	- calcul of some decimals of pi	=> OK
+	- calcul the reed solomon		=> OK
+	- dhrystone test Version 2.1	=> OK
+
+15-05-2007
+- Modifications on the pipeline for performing miss D-Cache
+	- add commands signals in the pipeline register
+		- stall : do not update
+		- flush : insert 0's
+		- stop  : do not update & insert 0's at the outputs
+	- make the stop signal out of the processor for the miss D-Cache
+	
+- the stop sign use combinatorial outputs must be modified for glitchs
+- Test the model with C programms:
+	- calcul of some decimals of pi	=> OK
+
+17-05-2007
+- Deplacement of the cache files in the main directorie of the rtl
+- Insert the D-Cache. Using the "stop" signal make the CPU in wait state when cache miss
+- 
+
+18-05-2007
+- Interfacing the D-Cache with the cpu
+- Fix bugs: problems interfacing the two components
+- Next steps:
+	- To modifiy the "r2000_mem2reg" and "r2000_reg2mem" for correct adaptation
+	- To introduce the "non-cachable" adresse data memory
+		- used for interfacing devices: I/O, uart, mac...
+
+19-05-2007
+- Remove the "r2000_reg2mem" module. duplicated in the cache memory
+- Problem with "stop" signal. some instructions are not executed
+- remove the "Doc" and "r2000sc" directory
+
+- fix "stop" bug: but still some problems that repeat the instruction in stages.
+	- "stop" must be negedge. modification in the "r2000_pipe_c.v" file
+- test with "D-Cache" and "I-Cache"
+	- Test of opcodes (assembler)	=> OK (repetead the first caracter: because the stop signal)
+		- the usart is in the "soc" level file.
+
+	
+21-05-2007
+- Use trace for finding problem with incorrect execution of "count.c" algorithm
+- Find problem with "ENDIAN" between the "r2000_mem2reg" and the D-Cache
+- To do : Must fix it
+
+22-05-2007
+- Fix bug : "ENDIAN" D-cache
+- Tested :
+	- Test of opcodes (assembler)	=> OK
+	- calcul of some decimals of pi	=> OK
+	- calcul the reed solomon		=> nOK
+	- dhrystone test Version 2.1	=> OK
+	
+- To Do:
+	- style some problems with reed solomon
+	- style some character are printed twice
+	- Make uncachable adress memory for I/O, uart, mac...
+
+23-05-2007
+- Fix bug : WORD 2'b4 =>2'b3
+- Save before make big modifications in the pipelne to resolve "stop" or halt pipeline
+
+26-05-2007
+	- r2000_pipe_d #(`dw) IDEX_inst_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR) , .flush_i(wHazardFlush) , .stop_i(wStop) , .D_i(ID_inst)				,	.Q_o(EX_inst) );
+		was not flushed
+
+28-05-2007
+- STILL PROBLEMS WITH THE D-CACHE memory
+	- Modification of the d-cache from SYNCHRONOUS -> ASYNCHRONOUS hit read/write
+
+29-05-2007
+**********
+- Fix Bug : on the behavioral D-Cache
+	- The "hit" signal
+	- The "hit read" operation
+	- The "hit write" operation
+		are ASYNCHRONOUSLY executed
+	- Add "DELAY" for waiting the inputs cache signals to stabilise to the correct value
+	
+	- Modification on the "r2000_pipe_d.v" module
+		- The "stop_i" is priore over the "flush_i" signal
+- Tested :
+	- calcul the reed solomon		=> OK (Minor bug on printing result)
+	- Test of opcodes (assembler)	=> OK
+	- calcul of some decimals of pi	=> OK
+	- dhrystone test Version 2.1	=> OK
+- To do:
+	- Fix minor bug on printing result
+
+03-06-2007
+**********
+- Add "Co-processor 0" in the project
+	- Limit is just for some exceptions
+	- No MMU, No Cache control, No Timer
+
+06-06-2007
+- Fix bug on the "instructions doc"
+- Still working on the implementation of the CP0
+- MFC0 & MTC0 are correctly implemented
+
+07-06-2007
+- THE CP0 IS MOVED INTO THE MEM STAGE
+	- to avoid mem/wb write when an exception occurs
+- Moved the PC adder to the pc unit
+- RFE is correctly implemented
+
+11-06-2007
+- Adding pipeline "flush" control signal when exception
+- stli generate an overflow	!!!
+	- to do : verify all instruction that generate overflow
+
+17-06-2007
+- Add exception on Branch Delay. BD bit in the Cause Register of CP0
+- Fix bug : verify all instruction that generate overflow (ADD, SUB, ADDI) only
+- Problem with : exception occured when MutlDiv interlock
+	- when exception not with interlock the exception is ok
+	- to do : fix bug exception when interlock or stop or stall
+
+14-07-2007
+- Exception/interruption signals must not be stalled, flushed, stoped or cleared(except reset)
+- Try this idea
+	- The exception prior over the pipeline operations
+		- RAW hazard			: stall[PC, IF/ID], flush[ID/EX]
+		- mult/div interlock	: stall[PC, IF/ID], flush[ID/EX] 
+		- I-cache miss			: stall[PC, IF/ID], flush[ID/EX]
+		- D-cache miss			: stall[PC, IF/ID, ID/EX, EX/MEM, MEM/WB], freeze[EX, MEM, WB]
+	- This mean, when exception occur
+		- RAW interlock			: is gived up
+		- mult/div interlock	: is stopped
+		- I-cache miss			: is reset
+		- D-cache miss			: is reset
+
+15-07-2007
+- remove "stop" signal from the units wish is redondant with the "stall" signal
+- substitute the "hazard" unit by the "pipeline controller unit"
+
+16-07-2007
+**********
+- make important modifications on the "r2000_pipe_ctrl.v" file
+	now we use events and a process :=> take care to priority
+	always@(events)
+		if eXception
+		else if D-Cache-miss
+		else if I-Cache-miss | Raw | MultDiv
+		
+19-07-2007
+- make some reflexion on the interrupt mecanism
+
+30-07-2007
+- Begin to include the "WISHBONE Conmax IP Core" to release a true SOC system
+
+01-08-2007
+- The "WISHBONE Conmax Interconnect Matrix IP Core" is connected
+	- MASTER 0 => I-CACHE CPU
+	- MASTER 1 => D-CACHE CPU
+	
+	- SLAVE  0 => SRAM CONTROLLER
+	
+- It does not work as expected
+	- MASTER 0 => I-CACHE CPU read the instruction but not the MASTER 1
+02-08-2007
+	- The CPU seem to be stoped du to stalling conflict between I-Cache and D-Cache
+	- The problem is that the software attent to write to the adress 0x2000_0000
+		so the CONMAX will select the "Slave Interface 2" wish there are no Slave connected to
+		this slave interface.
+		It's good to connecte an uart there.
+		For the test I changed the adress of uart to 0x0100_0000 and the soft seems working.
+03-08-2007
+	- "WISHBONE Conmax" Tested with
+		- dhrystone		: ok
+		- reed solomon	: ok
+		- opcode		: ok
+
+04-08-2007
+- continue reflexion on the interrupt mecanism
+
+---------------------------------
+revision 	:	rev 4 r2000pl
+date 		: 	13-01-2008
+---------------------------------
+- Create an account on www.opencores.org
+- Import the project on CVS
+- For know use CVS to facilitate the developpement

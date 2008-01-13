@@ -1,0 +1,8 @@
+0 Alpha_to 18a0	4 256
+0 Index_of 1da0	4 256
+0 Gg	 22a0	4 33
+1 data	 21a0	1 256
+0 tdata	 1ca0	1 256
+0 ddata	 17a0	1 256
+1 eras_pos	 2330	4 256
+0

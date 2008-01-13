@@ -1,0 +1,256 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+b                   0x4               pi.o
+f                   0x2bc4            pi.o
+g                   0x4               pi.o
+d                   0x4               pi.o
+e                   0x4               pi.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x0
+LOAD ..\..\..\lib\boot.o
+LOAD ..\..\..\lib\no_os.o
+LOAD ..\..\..\lib\integer.o
+LOAD ..\..\..\lib\string2.o
+LOAD ..\..\..\lib\print.o
+LOAD pi.o
+
+.text           0x00000000      0x8d4
+                0x00000000                _ftext=.
+ *(.text)
+ .text          0x00000000      0x1f4 ..\..\..\lib\boot.o
+                0x000001a8                longjmp
+                0x00000000                entry
+                0x00000170                setjmp
+                0x00000134                OS_AsmInterruptInit
+                0x000001e0                OS_AsmMult
+                0x0000003c                interrupt_service_routine
+                0x00000128                OS_AsmInterruptEnable
+ .text          0x000001f4       0xe0 ..\..\..\lib\no_os.o
+                0x000001f4                putchar
+                0x00000200                puts
+                0x00000294                kbhit
+                0x000002a8                getch
+                0x00000274                OS_InterruptServiceRoutine
+ .text          0x000002d4      0x1f0 ..\..\..\lib\integer.o
+                0x000002d4                itoa2
+                0x00000418                xtoa
+                0x00000464                itoa10
+ .text          0x000004c4       0x40 ..\..\..\lib\string2.o
+                0x000004c4                strcpy2
+ .text          0x00000504      0x1c8 ..\..\..\lib\print.o
+                0x00000504                print
+                0x00000594                print_hex
+                0x0000064c                print_num
+                0x000005f0                print_string
+ .text          0x000006cc      0x208 pi.o
+                0x000006cc                main
+ *(.stub)
+ *(.gnu.warning)
+ *(.gnu.linkonce.t*)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+                0x000008d4                _ecode=.
+
+.reginfo        0x000008d4       0x18
+ *(.reginfo)
+ .reginfo       0x000008d4       0x18 ..\..\..\lib\boot.o
+ .reginfo       0x000008ec       0x18 ..\..\..\lib\no_os.o
+ .reginfo       0x000008ec       0x18 ..\..\..\lib\integer.o
+ .reginfo       0x000008ec       0x18 ..\..\..\lib\string2.o
+ .reginfo       0x000008ec       0x18 ..\..\..\lib\print.o
+ .reginfo       0x000008ec       0x18 pi.o
+
+.ctors
+ *(.ctors)
+
+.dtors
+ *(.dtors)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.sdeinit
+ *(.sdeinit)
+
+.sdefini
+ *(.sdefini)
+
+.rodata         0x000008ec        0x7
+ *(.rodata)
+ .rodata        0x000008ec        0x7 pi.o
+ *(.rdata)
+ *(.gnu.linkonce.r*)
+
+.rodata1
+ *(.rodata1)
+                0x000008f3                _etext=.
+                0x000008f3                PROVIDE (etext, .)
+
+.data           0x000008f3        0x0
+                0x000008f3                _fdata=.
+ *(.data)
+ *(.gnu.linkonce.d*)
+
+.data1
+ *(.data1)
+                0x000088e3                _gp=(.+0x7ff0)
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+
+.sdata          0x000008f4        0x8
+ *(.sdata)
+ .sdata         0x000008f4        0x8 pi.o
+                0x000008f8                c
+                0x000008f4                a
+ *(.gnu.linkonce.s*)
+                0x000008fc                _edata=.
+                0x000008fc                PROVIDE (edata, .)
+                0x00000900                .=ALIGN(0x8)
+                0x000008fc                __bss_start=.
+                0x00000900                _fbss=__bss_start
+
+.sbss           0x00000900       0x10
+ *(.sbss)
+ *(.scommon)
+ .scommon       0x00000900       0x10 pi.o
+                0x00000900                b
+                0x00000904                g
+                0x00000908                d
+                0x0000090c                e
+
+.bss            0x00000910     0x2be4
+ *(.dynbss)
+ *(.bss)
+ .bss           0x00000910       0x1c ..\..\..\lib\integer.o
+ *(COMMON)
+ *fill*         0x0000092c        0x4
+ COMMON         0x00000930     0x2bc4 pi.o
+                0x00000930                f
+                0x000034f4                _end=.
+                0x000034f4                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.mdebug
+ *(.mdebug)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.sdata
+ *(.rel.sdata)
+ *(.rel.gnu.linkonce.s*)
+
+.rela.sdata
+ *(.rela.sdata)
+ *(.rela.gnu.linkonce.s*)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.gnu.linkonce.r*)
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+OUTPUT(test.exe elf32-bigmips)

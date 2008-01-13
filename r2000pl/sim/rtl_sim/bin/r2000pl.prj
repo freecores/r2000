@@ -1,0 +1,14 @@
+<project version="Crimson Editor 3.60">
+	<localfile path="C:\dev\Soc\Mips\r2000pl\rtl\verilog\define.h" />
+	<localfile path="C:\dev\Soc\Mips\r2000pl\rtl\verilog\r2000_cpu_pl.v" />
+	<localfile path="C:\dev\Soc\Mips\r2000pl\rtl\verilog\r2000_cpu_top.v" />
+	<localfile path="C:\dev\Soc\Mips\r2000pl\rtl\verilog\r2000_mem_ctrl.v" />
+	<localfile path="C:\dev\Soc\Mips\r2000pl\sim\rtl_sim\bin\r2000pl.do" />
+	<localfile path="C:\dev\Soc\Mips\release.txt" />
+	<localfile path="C:\dev\Soc\Mips\r2000pl\bench\verilog\tb_r2000_cpu_top_SRAM-FLASH.v" />
+	<localfile path="C:\dev\Soc\Mips\r2000pl\bench\verilog\tb_r2000_cpu_top_SRAM.v" />
+</project>
+
+<workspace version="Crimson Editor 3.60">
+</workspace>
+

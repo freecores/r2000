@@ -1,0 +1,350 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+FuncPtr             0x4               rtos_test.o
+CountOk             0x4               uart.o
+CountError          0x4               uart.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x10000000
+LOAD boot.o
+LOAD rtos.o
+LOAD libc.o
+LOAD uart.o
+LOAD rtos_test.o
+LOAD math.o
+
+.text           0x10000000     0x5938
+                0x10000000                _ftext=.
+ *(.text)
+ .text          0x10000000      0x1f4 boot.o
+                0x100001a8                longjmp
+                0x10000000                entry
+                0x10000170                setjmp
+                0x10000134                OS_AsmInterruptInit
+                0x100001e0                OS_AsmMult
+                0x1000003c                interrupt_service_routine
+                0x10000128                OS_AsmInterruptEnable
+ .text          0x100001f4     0x1c28 rtos.o
+                0x100003dc                OS_HeapFree
+                0x10001b30                OS_InterruptMaskSet
+                0x10000b7c                OS_ThreadExit
+                0x10000cfc                OS_ThreadTick
+                0x100010d4                OS_MutexCreate
+                0x10001914                OS_TimerStop
+                0x10000c78                OS_ThreadInfoGet
+                0x1000056c                OS_HeapRegister
+                0x10000c64                OS_ThreadTime
+                0x10001b1c                OS_InterruptStatus
+                0x10001a00                OS_InterruptServiceRoutine
+                0x10001dac                OS_Assert
+                0x10000c30                OS_ThreadSelf
+                0x10000c3c                OS_ThreadSleep
+                0x10000c90                OS_ThreadPrioritySet
+                0x100017c0                OS_TimerStart
+                0x10001794                OS_TimerDelete
+                0x100009e4                OS_ThreadCreate
+                0x10001ae0                OS_InterruptRegister
+                0x100002c4                OS_HeapMalloc
+                0x10001c6c                OS_Init
+                0x10000c84                OS_ThreadPriorityGet
+                0x10000e9c                OS_SemaphorePend
+                0x10001db4                main
+                0x100012c8                OS_MQueueCreate
+                0x10000564                OS_HeapAlternate
+                0x10000e4c                OS_SemaphoreDelete
+                0x10000c70                OS_ThreadInfoSet
+                0x10001b80                OS_InterruptMaskClear
+                0x1000116c                OS_MutexPend
+                0x10001c20                OS_ThreadTick2
+                0x100011f8                OS_MutexPost
+                0x10000da4                OS_SemaphoreCreate
+                0x10001028                OS_SemaphorePost
+                0x10001394                OS_MQueueSend
+                0x10001138                OS_MutexDelete
+                0x100016b8                OS_TimerCreate
+                0x100001f4                OS_HeapCreate
+                0x100014a8                OS_MQueueGet
+                0x10001360                OS_MQueueDelete
+                0x10001d84                OS_Start
+                0x100002a0                OS_HeapDestroy
+ .text          0x10001e1c      0xbc8 libc.o
+                0x10001e1c                strcpy
+                0x10002080                memmove
+                0x100022e8                itoa
+                0x100021fc                strtol
+                0x10001e7c                strcat
+                0x10001fa4                strstr
+                0x10002164                rand
+                0x10001f64                strncmp
+                0x10001e3c                strncpy
+                0x100020f8                memcmp
+                0x100026d8                sscanf
+                0x10001ec4                strncat
+                0x10002130                memset
+                0x100021f0                srand
+                0x10001f3c                strcmp
+                0x10002408                sprintf
+                0x100022c4                atoi
+                0x1000204c                memcpy2
+                0x10002020                strlen
+                0x10002154                abs
+ .text          0x100029e4      0xdb4 uart.o
+                0x10002a70                BufferWrite
+                0x100029e4                BufferCreate
+                0x100036d0                puts
+                0x100030a4                UartReadData
+                0x10003778                kbhit
+                0x10003248                UartPrintfPoll
+                0x10003754                getch
+                0x1000300c                UartRead
+                0x10002f80                UartInit
+                0x10003508                UartPrintfNull
+                0x10003678                UartPacketConfig
+                0x10002fdc                UartWrite
+                0x1000368c                UartPacketSend
+                0x10002b20                BufferRead
+                0x10003114                UartPrintf
+                0x10003030                UartWriteData
+                0x100036b8                Led
+                0x1000339c                UartPrintfCritical
+                0x10003510                UartScanf
+ .text          0x10003798     0x1220 rtos_test.o
+                0x1000482c                MainThread
+                0x10004500                TestMath
+ .text          0x100049b8      0xf80 math.o
+                0x10004c78                __divsf3
+                0x10004e28                __fixsfsi
+                0x10004b40                __subsf3
+                0x100055bc                FP_Atan2
+                0x10005354                FP_Sin
+                0x100050a4                FP_Sqrt
+                0x10005004                __lesf2
+                0x10005798                FP_Log
+                0x10005900                FP_Pow
+                0x10005384                FP_Atan
+                0x10005084                __nesf2
+                0x100051c0                FP_Cos
+                0x10005024                __gtsf2
+                0x10004e88                __floatsisf
+                0x10005064                __eqsf2
+                0x100049b8                __negsf2
+                0x10004fe4                __ltsf2
+                0x10004f40                FP_Cmp
+                0x10004b74                __mulsf3
+                0x10005044                __gesf2
+                0x1000565c                FP_Exp
+                0x100049dc                __addsf3
+ *(.stub)
+ *(.gnu.warning)
+ *(.gnu.linkonce.t*)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+                0x10005938                _ecode=.
+
+.reginfo        0x10005938       0x18
+ *(.reginfo)
+ .reginfo       0x10005938       0x18 boot.o
+ .reginfo       0x10005950       0x18 rtos.o
+ .reginfo       0x10005950       0x18 libc.o
+ .reginfo       0x10005950       0x18 uart.o
+ .reginfo       0x10005950       0x18 rtos_test.o
+ .reginfo       0x10005950       0x18 math.o
+
+.ctors
+ *(.ctors)
+
+.dtors
+ *(.dtors)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.sdeinit
+ *(.sdeinit)
+
+.sdefini
+ *(.sdefini)
+
+.rodata         0x10005950      0x447
+ *(.rodata)
+ .rodata        0x10005950       0x69 rtos.o
+ *fill*         0x100059b9        0x3
+ .rodata        0x100059bc       0x1d uart.o
+ *fill*         0x100059d9        0x7
+ .rodata        0x100059e0      0x39c rtos_test.o
+ .rodata        0x10005d7c       0x1b math.o
+ *(.rdata)
+ *(.gnu.linkonce.r*)
+
+.rodata1
+ *(.rodata1)
+                0x10005d97                _etext=.
+                0x10005d97                PROVIDE (etext, .)
+
+.data           0x10005d97        0x0
+                0x10005d97                _fdata=.
+ *(.data)
+ *(.gnu.linkonce.d*)
+
+.data1
+ *(.data1)
+                0x1000dd87                _gp=(.+0x7ff0)
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+
+.sdata          0x10005d98        0xc
+ *(.sdata)
+ .sdata         0x10005d98        0xc libc.o
+ *(.gnu.linkonce.s*)
+                0x10005da4                _edata=.
+                0x10005da4                PROVIDE (edata, .)
+                0x10005da8                .=ALIGN(0x8)
+                0x10005da4                __bss_start=.
+                0x10005da8                _fbss=__bss_start
+
+.sbss           0x10005da8       0x84
+ *(.sbss)
+ .sbss          0x10005da8       0x38 rtos.o
+ .sbss          0x10005de0       0x38 uart.o
+ .sbss          0x10005e18        0x8 rtos_test.o
+ *(.scommon)
+ .scommon       0x10005e20        0x8 uart.o
+                0x10005e20                CountOk
+                0x10005e24                CountError
+ .scommon       0x10005e28        0x4 rtos_test.o
+                0x10005e28                FuncPtr
+
+.bss            0x10005e30    0x80698
+ *(.dynbss)
+ *(.bss)
+ .bss           0x10005e30    0x800b8 rtos.o
+ .bss           0x10085ee8      0x400 uart.o
+ .bss           0x100862e8      0x1e0 rtos_test.o
+ *(COMMON)
+                0x100864c8                _end=.
+                0x100864c8                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.mdebug
+ *(.mdebug)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.sdata
+ *(.rel.sdata)
+ *(.rel.gnu.linkonce.s*)
+
+.rela.sdata
+ *(.rela.sdata)
+ *(.rela.gnu.linkonce.s*)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.gnu.linkonce.r*)
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+OUTPUT(test.exe elf32-bigmips)

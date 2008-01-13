@@ -1,0 +1,116 @@
+[Workspace Header]
+Version = 700
+Pathname = "/c/dev/Soc/Mips/Soft/test/C/reed solomon/win32/rs.cws"
+CVI Dir = "/c/program files/national instruments/cvi70"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/c/vxipnp/winnt"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "rs.prj"
+Drag Bar Left = 248
+Window Top = 227
+Window Left = 86
+Window Bottom = 847
+Window Right = 912
+Maximized = True
+Maximized Children = True
+Max Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+Save Changes Before Running = "Always"
+Hide Windows = False
+Global Hot Key = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 0
+MainColumnWidth = 225
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+StatusColumnWidth = 70
+
+[Project Header 0001]
+Version = 700
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/dev/Soc/Mips/Soft/test/C/reed solomon/win32/rs_tak.c"
+File Type = "CSource"
+Disk Date = 3248945394
+In Projects = "1,"
+Window Top = 30
+Window Left = -1
+Window Docked = True
+Source Window State = "1,831,831,831,12,16,16,0,0,80,0,1,0,1,0,25,822,0,834,11,"
+Breakpoint 0001 = "748,0,enabled,"
+Breakpoint 0002 = "834,0,enabled,"
+Breakpoint 0003 = "835,0,enabled,"
+Breakpoint 0004 = "884,0,enabled,"
+
+[File 0002]
+Path = "/c/dev/Soc/Mips/Soft/test/C/reed solomon/win32/RS.H"
+File Type = "Include"
+Disk Date = 3197058050
+In Projects = "1,"
+Window Top = 95
+Window Left = 244
+Window Docked = True
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = True
+Suppress CVI Error Messages = False
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+
+[Watch Point 1]
+Watch Expression = "data"
+Update Display Continuously = True
+Break When Value Changes = False
+Scope = "Global To Project"
+DllName = "rs_dbg.exe"
+Project = 1
+
+[Watch Point 2]
+Watch Expression = "eras_pos"
+Update Display Continuously = True
+Break When Value Changes = False
+Scope = "Global To Project"
+DllName = "rs_dbg.exe"
+Project = 1
+
+[Watch Point 3]
+Watch Expression = "work"
+Update Display Continuously = True
+Break When Value Changes = False
+Scope = "Local"
+File = "rs_tak.c"
+Function = "fill_eras"
+DllName = "rs_dbg.exe"
+Project = 1
+
