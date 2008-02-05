@@ -1,1 +1,1194 @@
+C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_arb.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_arb.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_arb.v(67): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_arb
 
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v {0 vlog\ -work\ work\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v\nModel\ Technology\ ModelSim\ SE\ vlog\ 6.0c\ Compiler\ 2005.02\ Feb\ \ 2\ 2005\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(51):\ Cannot\ open\ `include\ file\ \"timescale.v\".\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(52):\ Cannot\ open\ `include\ file\ \"define.h\".\n--\ Compiling\ module\ r2000_mem2reg\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(78):\ Macro\ `ENDIAN\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(78):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(83):\ Macro\ `dw\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(90):\ Macro\ `dw\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(100):\ Macro\ `dw\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(101):\ Macro\ `dw\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(123):\ Macro\ `WORD\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(123):\ near\ \":\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(126):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(126):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(126):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(126):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(126):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(131):\ Macro\ `HALF\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(131):\ near\ \"begin\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(135):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(135):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(135):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(135):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(135):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(139):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(139):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(139):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(139):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(139):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(143):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(143):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(143):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(143):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(143):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(147):\ near\ \"=\":\ \ expecting:\ '#'\ '('\ IDENT\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(147):\ near\ \"\;\":\ syntax\ error\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(149):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(154):\ Macro\ `BYTE\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(157):\ near\ \"\[\":\ \ expecting:\ '#'\ '('\ IDENT\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(158):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(158):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(158):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(158):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(158):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(162):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(162):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(162):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(162):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(162):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(166):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(166):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(166):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(166):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(166):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(170):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(170):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(170):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(170):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(170):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(174):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(174):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(174):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(174):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(174):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(181):\ near\ \"=\":\ \ expecting:\ '#'\ '('\ IDENT\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(181):\ near\ \"\;\":\ syntax\ error\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(183):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(188):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(188):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(188):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(188):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(188):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(196):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(196):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(197):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(197):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(198):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(198):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(199):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(199):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(227):\ Macro\ `ENDIAN\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(227):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(232):\ Macro\ `dw\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(238):\ Macro\ `dw\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(248):\ Macro\ `dw\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(269):\ Macro\ `WORD\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(269):\ near\ \":\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(271):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(271):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(271):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(271):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(271):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(276):\ Macro\ `HALF\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(276):\ near\ \"begin\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(280):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(280):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(280):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(280):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(280):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(283):\ near\ \",\":\ \ expecting:\ '('\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(284):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(284):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(284):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(284):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(284):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(288):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(288):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(288):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(288):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(288):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(296):\ Macro\ `BYTE\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(299):\ near\ \"=\":\ \ expecting:\ '#'\ '('\ IDENT\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(299):\ near\ \"\;\":\ \ expecting:\ ','\ ':'\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(300):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(300):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(300):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(300):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(300):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(303):\ near\ \",\":\ \ expecting:\ '('\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(304):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(304):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(304):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(304):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(304):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(308):\ near\ \",\":\ \ expecting:\ '('\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(309):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(309):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(309):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(309):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(309):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(313):\ near\ \",\":\ \ expecting:\ '('\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(314):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(314):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(314):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(314):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(314):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(319):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(319):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(319):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(319):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(319):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(330):\ near\ \"\}\":\ \ expecting:\ '\;'\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(330):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(330):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(330):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(330):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(346):\ Macro\ `dw\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(348):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(348):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(349):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(349):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(350):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(350):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(351):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_membus.v(351):\ near\ \"\;\":\ \ expecting:\ IDENT\n\n {3.0 5.0 7.0 8.0 13.0 14.0 15.0 16.0 20.0 21.0 22.0 23.0 26.0 27.0 31.0 32.0 36.0 39.0 40.0 42.0 46.0 47.0 51.0 52.0 56.0 57.0 61.0 62.0 66.0 70.0 75.0 76.0 77.0 78.0 79.0 80.0 81.0 82.0 83.0 84.0 88.0 89.0 90.0 91.0 95.0 96.0 97.0 98.0 101.0 103.0 107.0 108.0 113.0 116.0 120.0 122.0 126.0 128.0 132.0 134.0 138.0 139.0 143.0 144.0 150.0 151.0 152.0 153.0 154.0 155.0 156.0 157.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/timescale.v {1 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/timescale.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+
+} {} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_pri_dec.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_pri_dec.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_pri_dec.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_pri_dec
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_defines.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_defines.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_defines.v(68): Cannot open `include file "timescale.v".
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v {0 vlog\ -work\ work\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v\nModel\ Technology\ ModelSim\ SE\ vlog\ 6.0c\ Compiler\ 2005.02\ Feb\ \ 2\ 2005\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(46):\ Cannot\ open\ `include\ file\ \"timescale.v\".\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(47):\ Cannot\ open\ `include\ file\ \"define.h\".\n--\ Compiling\ module\ r2000_pipe_ctrl\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(75):\ Macro\ `iw\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(75):\ near\ \"\;\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(135):\ Macro\ `hi_ptr\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(135):\ near\ \")\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(135):\ Macro\ `lo_ptr\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(135):\ near\ \")\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(139):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(139):\ near\ \")\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(140):\ Macro\ `zer0\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(140):\ near\ \")\":\ \ expecting:\ IDENT\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(141):\ near\ \"\;\":\ \ expecting:\ '!'\ ')'\ '@'\ ->\ <->\ |->\ |=>\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(159):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(159):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(159):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(159):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(159):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(159):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(160):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(160):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(160):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(160):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(161):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(161):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(161):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(161):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(161):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(169):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(169):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(169):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(169):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(169):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(169):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(170):\ Macro\ `LOW\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(170):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(170):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(170):\ Macro\ `LOW\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(174):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(174):\ near\ \",\":\ \ expecting:\ IDENT\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(174):\ Macro\ `HIGH\ is\ undefined.\n**\ Warning:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(175):\ Macro\ `HIGH\ is\ undefined.\n**\ Error:\ C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe_ctrl.v(175):\ near\ \"\}\":\ \ expecting:\ IDENT\n\n {3.0 5.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 17.0 18.0 19.0 24.0 25.0 28.0 29.0 33.0 34.0 39.0 40.0 43.0 44.0 46.0 47.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(56): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(57): Cannot open `include file "define.h".
+-- Compiling module r2000_i_cache
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(67): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(68): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(69): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(103): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(103): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(104): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(104): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(107): Macro `BYTE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(107): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(108): Macro `HALF is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(108): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(109): Macro `WORD is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(109): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(118): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(119): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(123): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(124): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(125): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(126): Macro `slw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(132): Macro `WORDw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(132): near "/":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(132): Macro `BYTEw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(138): Macro `BYTEw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(139): Macro `valid is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(139): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(149): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(149): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(150): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(152): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(153): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(156): Macro `slw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(168): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(168): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(186): Macro `valid is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(186): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(186): Macro `CLEAR is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(194): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(199): Macro `CLOCK_REVER is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(203): Macro `WORDw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(203): near "/":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(203): Macro `BYTEw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(208): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(208): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(212): Macro `valid is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(212): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(212): Macro `tag is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(212): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(214): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(214): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(231): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(231): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(237): near "end":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(245): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(245): near "*":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(245): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(245): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(246): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(246): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(248): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(250): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(250): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(261): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(261): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(288): Macro `valid is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(288): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(288): Macro `SET is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(289): Macro `tag is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(289): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(297): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(298): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(305): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(319): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(320): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(321): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(323): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(329): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(355): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(356): Macro `slw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(366): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(371): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(377): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(379): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(379): near "*":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(379): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(386): near "begin":  expecting: ';'
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(387): Macro `CLOCK_EDGE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(388): near "#":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(395): near "=":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(396): Macro `CLOCK_EDGE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(397): near "while":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(397): Macro `CLOCK_EDGE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(399): near "[":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(399): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_i-cache.v(399): Macro `dw is undefined.
+
+} {3.0 5.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 26.0 27.0 30.0 31.0 32.0 33.0 38.0 39.0 40.0 41.0 45.0 46.0 48.0 49.0 50.0 51.0 52.0 53.0 54.0 55.0 56.0 58.0 59.0 60.0 61.0 62.0 63.0 64.0 66.0 67.0 68.0 69.0 70.0 71.0 73.0 74.0 88.0 89.0 90.0 91.0 92.0 94.0 95.0 96.0 97.0 98.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_pc
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(68): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(68): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(79): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(87): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(93): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(93): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(95): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(95): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(96): Macro `ZERO is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(96): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pc.v(105): Macro `aw is undefined.
+
+} {3.0 5.0 7.0 8.0 13.0 14.0 15.0 16.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_pri_enc.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_pri_enc.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_pri_enc.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_pri_enc
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux2.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux2.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux2.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux2.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_mux2
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux2.v(65): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux2.v(65): near ";":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_shifter
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(65): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(70): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(99): Macro `dw is undefined.
+-- Compiling module r2000_selectshift
+
+} {3.0 5.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_msel.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_msel.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_msel.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_msel
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(56): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(57): Cannot open `include file "define.h".
+-- Compiling module r2000_cpu_pipe
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(99): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(100): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(103): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(104): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(105): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(132): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(133): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(134): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(135): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(136): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(139): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(151): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(152): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(153): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(161): Macro `SELWIDTH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(172): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(173): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(180): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(187): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(195): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(203): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(214): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(224): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(339): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(339): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(339): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(340): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(340): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(340): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(468): Macro `aw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(468): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(477): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(505): Macro `iw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(505): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(508): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(512): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(515): Macro `iw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(515): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(519): Macro `ra is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(523): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(575): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(575): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(575): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(575): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(576): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(576): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(576): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(578): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(578): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(578): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(578): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(579): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(579): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(579): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(579): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(581): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(581): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(581): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(581): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(582): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(582): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(582): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(582): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(583): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(583): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(583): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(583): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(584): Macro `iw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(584): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(584): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(584): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(685): Macro `ZERO is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(714): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(714): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(714): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(715): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(715): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(715): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(716): Macro `iw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(716): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(716): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(717): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(717): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(717): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(864): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(864): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(864): near ";":  expecting: '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(865): Macro `iw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(865): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(865): near ";":  expecting: '(' IDENT
+
+} {3.0 5.0 30.0 32.0 33.0 35.0 36.0 38.0 39.0 40.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 49.0 50.0 51.0 53.0 54.0 55.0 56.0 57.0 58.0 59.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 70.0 71.0 72.0 73.0 74.0 75.0 76.0 77.0 79.0 81.0 82.0 84.0 85.0 87.0 88.0 90.0 91.0 93.0 94.0 96.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_mux3
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(66): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(66): near ";":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_master_if.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_master_if.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_master_if.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_master_if
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_mux4
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(67): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(67): near ";":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_decoder
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(103): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(197): Macro `addi is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(197): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(197): Macro `addiu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(198): Macro `andi is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(199): Macro `ori is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(200): Macro `slti is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(201): Macro `sltiu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(202): Macro `xori is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(204): Macro `lb is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(204): Macro `lbu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(204): Macro `lh is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(204): Macro `lhu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(205): Macro `lw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(205): Macro `lwl is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(205): Macro `lwr is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(206): Macro `sb is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(206): Macro `sh is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(206): Macro `sw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(206): Macro `swl is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(206): Macro `swr is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(209): Macro `beq is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(209): Macro `bgtz is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(209): Macro `blez is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(209): Macro `bne is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(210): Macro `regimm is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(211): Macro `special is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(217): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(217): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(217): Macro `add is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(217): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(218): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(218): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(218): Macro `sub is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(218): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(219): Macro `addi is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(219): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): Macro `div is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): Macro `divu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): Macro `mult is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): Macro `multu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): Macro `mthi is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): Macro `mtlo is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(224): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): Macro `sb is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): Macro `sh is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): Macro `sw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): Macro `swl is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): Macro `swr is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(225): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(226): Macro `sb is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(226): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(226): Macro `sh is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(226): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(226): Macro `swr is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(226): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(226): Macro `j is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(226): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(227): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(227): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(227): Macro `jr is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(227): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(228): Macro `beq is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(228): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(228): Macro `bgtz is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(228): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(228): Macro `blez is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(228): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(228): Macro `bne is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(228): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(229): Macro `regimm is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(229): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(229): Macro `bgez is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(229): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(229): Macro `bltz is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(229): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(230): Macro `cop0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(230): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(230): Macro `mt is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(230): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(230): Macro `rfe is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(230): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(232): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(232): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(238): Macro `LOW is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(238): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(239): Macro `LOW is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(239): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(241): Macro `lb is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(241): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(241): Macro `lbu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(241): Macro `lh is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(241): Macro `lhu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(242): Macro `lw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(242): Macro `lwl is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(242): Macro `lwr is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(243): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(245): Macro `sb is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(245): Macro `sh is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(245): Macro `sw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(245): Macro `swl is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(245): Macro `swr is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(246): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(248): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(249): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(259): Macro `lb is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(259): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(259): Macro `lbu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(259): Macro `lh is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(259): Macro `lhu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(260): Macro `lw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(260): Macro `lwl is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(260): Macro `lwr is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(270): Macro `jal is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(270): near ":":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(271): Macro `lui is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(272): Macro `special is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(274): Macro `sll is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(274): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(274): Macro `sllv is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(274): Macro `sra is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(275): Macro `srav is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(275): Macro `srl is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(275): Macro `srlv is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(276): near ";":  expecting: ',' ':'
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(277): Macro `jalr is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(278): Macro `mfhi is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(279): Macro `mflo is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(282): Macro `regimm is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(282): Macro `bgezal is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(282): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(282): Macro `bltzal is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(282): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(283): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(294): Macro `lb is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(294): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(294): Macro `lbu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(294): Macro `sb is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(294): Macro `BYTE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(295): Macro `lh is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(295): Macro `lhu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(295): Macro `sh is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(295): Macro `HALF is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(296): Macro `lw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(296): Macro `sw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(296): Macro `WORD is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(297): Macro `WORD is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(301): Macro `lhu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(301): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(301): Macro `lbu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(301): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(302): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(306): Macro `sb is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(306): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(306): Macro `sh is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(306): Macro `sw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(306): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(307): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(314): Macro `addi is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(314): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(314): Macro `addiu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(314): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(314): Macro `slti is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(314): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(314): Macro `sltiu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(314): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): Macro `lb is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): Macro `lbu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): Macro `lh is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): Macro `lhu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): Macro `lw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): Macro `lwl is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(315): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): Macro `lwr is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): Macro `sb is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): Macro `sh is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): Macro `sw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): Macro `swl is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): Macro `swr is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(316): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(318): Macro `andi is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(318): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(318): Macro `ori is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(318): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(318): Macro `xori is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(318): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(327): Macro `regimm is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(327): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(328): Macro `bgez is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(328): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(329): Macro `bltz is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(329): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(330): Macro `bgezal is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(330): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(331): Macro `bltzal is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(331): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(340): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(340): near ":":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(341): Macro `addi is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(341): Macro `addiu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(341): Macro `andi is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(341): Macro `ori is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(342): Macro `slti is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(342): Macro `sltiu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(342): Macro `xori is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(343): Macro `lb is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(343): Macro `lbu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(343): Macro `lh is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(343): Macro `lhu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(344): Macro `lui is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(344): Macro `lw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(344): Macro `lwl is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(344): Macro `lwr is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(346): Macro `jal is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(347): Macro `regimm is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(347): Macro `bgezal is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(347): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(347): Macro `bltzal is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(347): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(348): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(362): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(362): near ":":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(363): Macro `jr is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(363): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(363): Macro `jalr is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(363): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(364): Macro `REGISTER is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(364): Macro `CONTINU is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(365): Macro `BNV_ps is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(365): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(367): Macro `regimm is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(367): near "begin":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(368): Macro `CONDITION is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(368): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(370): Macro `bgez is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(370): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(371): Macro `bgezal is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(371): Macro `BGE_ps is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(372): Macro `bltzal is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(373): Macro `bltz is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(373): Macro `BLT_ps is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(374): Macro `BNV_ps is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(377): Macro `j is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(377): Macro `jal is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(378): Macro `UNCONDITION is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(379): Macro `BNV_ps is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(381): Macro `beq is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(382): Macro `CONDITION is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(383): Macro `BEQ_ps is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(385): Macro `bgtz is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(386): Macro `CONDITION is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(387): Macro `BGT_ps is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(389): Macro `blez is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(390): Macro `CONDITION is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(391): Macro `BLE_ps is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(393): Macro `bne is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(394): Macro `CONDITION is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(395): Macro `BNE_ps is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(398): Macro `CONTINU is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(399): Macro `BNV_ps is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(408): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(408): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(409): Macro `sllv is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(409): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(410): Macro `srlv is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(410): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(411): Macro `srav is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(411): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(412): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(412): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(414): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(414): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(415): Macro `sll is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(415): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(416): Macro `sllv is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(416): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(417): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(417): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(419): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(419): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(420): Macro `sra is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(420): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(421): Macro `srav is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(421): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(422): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(422): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(428): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(428): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(429): Macro `mult is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(429): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(430): Macro `div is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(430): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(431): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(431): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(433): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(433): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(434): Macro `mult is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(434): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(435): Macro `multu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(435): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(436): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(436): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(438): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(438): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(439): Macro `mult is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(439): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(440): Macro `multu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(440): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(441): Macro `div is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(441): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(442): Macro `divu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(442): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(443): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(443): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(445): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(445): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(446): Macro `mthi is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(446): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(447): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(447): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(449): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(449): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(450): Macro `mtlo is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(450): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(451): Macro `HIGH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(451): Macro `LOW is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(455): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(455): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(455): Macro `syscall is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(455): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(456): Macro `special is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(456): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(456): Macro `break is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(456): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(457): Macro `cop0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(457): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(457): Macro `rfe is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(457): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(458): Macro `cop0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(458): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(458): Macro `mf is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(458): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(458): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(459): Macro `cop0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(459): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(459): Macro `mt is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(459): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(459): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+
+} {3.0 5.0 8.0 9.0 34.0 35.0 36.0 37.0 38.0 39.0 40.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 49.0 50.0 51.0 52.0 53.0 54.0 55.0 56.0 57.0 58.0 59.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 70.0 71.0 72.0 73.0 74.0 75.0 76.0 77.0 78.0 79.0 80.0 81.0 82.0 83.0 84.0 85.0 86.0 87.0 88.0 89.0 90.0 91.0 92.0 93.0 94.0 95.0 96.0 97.0 100.0 101.0 102.0 103.0 104.0 105.0 121.0 122.0 129.0 130.0 133.0 134.0 139.0 140.0 145.0 146.0 147.0 149.0 150.0 151.0 163.0 164.0 168.0 169.0 174.0 175.0 176.0 177.0 178.0 179.0 180.0 181.0 182.0 183.0 184.0 185.0 186.0 187.0 188.0 189.0 190.0 191.0 192.0 193.0 194.0 195.0 196.0 197.0 198.0 199.0 200.0 201.0 202.0 203.0 204.0 205.0 206.0 207.0 208.0 209.0 210.0 211.0 212.0 213.0 214.0 215.0 216.0 217.0 218.0 219.0 220.0 221.0 222.0 223.0 241.0 242.0 243.0 245.0 246.0 247.0 248.0 249.0 250.0 251.0 254.0 255.0 256.0 257.0 258.0 259.0 260.0 261.0 286.0 287.0 288.0 289.0 290.0 291.0 292.0 293.0 296.0 297.0 298.0 299.0 300.0 301.0 304.0 305.0 306.0 307.0 308.0 309.0 312.0 313.0 314.0 315.0 316.0 317.0 320.0 321.0 322.0 323.0 324.0 325.0 328.0 329.0 330.0 331.0 332.0 333.0 334.0 335.0 336.0 337.0 340.0 341.0 342.0 343.0 346.0 347.0 348.0 349.0 352.0 353.0 354.0 355.0 356.0 357.0 358.0 359.0 360.0 361.0 362.0 363.0 364.0 365.0 366.0 368.0 369.0 370.0 371.0 373.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_top.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_top.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_top.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_top
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_mux5
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(68): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(68): near ";":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_aluctrl
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(78): Macro `aluop_add is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(78): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(79): Macro `aluop_sub is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(79): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(80): Macro `aluop_and is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(80): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(81): Macro `aluop_or is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(81): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(82): Macro `aluop_slt is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(82): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(83): Macro `aluop_sltu is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(83): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(84): Macro `aluop_xor is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(84): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(86): Macro `add is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(86): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(87): Macro `addu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(87): Macro `aluop_add is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(87): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(88): Macro `sub is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(89): Macro `subu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(89): Macro `aluop_sub is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(90): Macro `and is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(90): Macro `aluop_and is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(91): Macro `or is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(91): Macro `aluop_or is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(92): Macro `xor is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(92): Macro `aluop_xor is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(93): Macro `nor is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(93): Macro `aluop_nor is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(94): Macro `slt is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(94): Macro `aluop_slt is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(95): Macro `sltu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(95): Macro `aluop_sltu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(96): Macro `aluop_tra is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(98): Macro `aluop_add is undefined.
+
+} {3.0 5.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0 24.0 25.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_mux7
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v(69): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v(69): near ";":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_soc
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(82): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(84): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(108): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(109): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(113): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(114): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(115): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(123): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(124): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(125): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(133): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(134): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(135): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(140): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(140): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(143): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(202): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(203): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(237): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(250): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(250): near ",":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(251): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(288): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(290): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(302): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(304): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(316): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(318): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(330): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(332): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(344): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(346): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(358): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(360): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(386): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(400): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(414): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(428): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(442): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(456): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(470): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(484): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(498): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(512): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(526): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(540): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(554): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(568): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(582): Macro `dw is undefined.
+
+} {3.0 5.0 20.0 21.0 26.0 27.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(49): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(50): Cannot open `include file "define.h".
+-- Compiling module r2000_alu
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(70): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(70): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(110): Macro `aluop_add is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(110): near ":":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(111): Macro `aluop_sub is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(112): Macro `aluop_and is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(113): Macro `aluop_or is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(114): Macro `aluop_xor is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(115): Macro `aluop_nor is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(116): Macro `aluop_sltu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(116): Macro `ONE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(116): Macro `ZERO is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(117): Macro `aluop_slt is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(117): Macro `ONE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(117): Macro `ZERO is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(124): Macro `ZERO is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(124): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(126): Macro `aluop_sub is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(126): near ")":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0 9.0 10.0 22.0 23.0 24.0 25.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(47): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(48): Cannot open `include file "define.h".
+-- Compiling module r2000_branchdecoder
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(78): Macro `SELWIDTH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(84): Macro `SELWIDTH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(85): Macro `SELWIDTH is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(101): Macro `CONTINU is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(101): near ":":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(103): Macro `BRANCH_NO is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(103): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(107): Macro `CONDITION is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(108): near "begin":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(116): Macro `BEQ_ps is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(116): near ":":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(117): Macro `BNE_ps is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(117): near ":":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(118): Macro `BGE_ps is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(118): near ":":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(119): Macro `BLT_ps is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(119): near ":":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(120): Macro `BGT_ps is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(120): near ":":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(121): Macro `BLE_ps is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(121): near ":":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(124): near ":": syntax error
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(124): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(128): near "=":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(128): Macro `BRANCH_COND is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(130): near "=":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(130): Macro `BRANCH_NO is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(133): Macro `REGISTER is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(135): Macro `BRANCH_REG is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(138): Macro `UNCONDITION is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(140): Macro `BRANCH_UNCOND is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(145): Macro `BRANCH_NO is undefined.
+
+} {3.0 5.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0 23.0 24.0 25.0 26.0 28.0 29.0 30.0 31.0 32.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(45): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(46): Cannot open `include file "define.h".
+-- Compiling module r2000_cp0
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(97): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(98): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(107): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(108): Macro `dw is undefined.
+
+} {3.0 5.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/mem/asram_core.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/mem/asram_core.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/mem/asram_core.v(33): Cannot open `include file "timescale.v".
+-- Compiling module asram_core
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_rf.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_rf.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_rf.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_rf
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_slave_if.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_slave_if.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_slave_if.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_slave_if
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(50): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(51): Cannot open `include file "define.h".
+-- Compiling module r2000_multdiv
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(82): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(88): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(93): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(100): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(107): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(113): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(135): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(135): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(135): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(165): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(211): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(211): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(213): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(213): near ")":  expecting: IDENT
+
+} {3.0 5.0 13.0 15.0 19.0 20.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_forward
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(70): Macro `iw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(70): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(99): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(99): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(99): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(101): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(101): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(101): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(103): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(103): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(103): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(106): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(106): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(106): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(108): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(108): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(108): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(110): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(110): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(110): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+
+} {3.0 5.0 7.0 8.0 9.0 11.0 12.0 14.0 15.0 17.0 18.0 20.0 21.0 23.0 24.0 26.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(56): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(57): Cannot open `include file "define.h".
+-- Compiling module r2000_d_cache
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(67): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(68): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(69): Macro `WORDw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(109): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(109): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(110): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(110): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(113): Macro `BYTE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(113): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(114): Macro `HALF is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(114): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(115): Macro `WORD is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(115): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(126): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(127): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(128): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(134): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(135): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(136): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(137): Macro `slw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(143): Macro `WORDw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(143): near "/":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(143): Macro `BYTEw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(146): Macro `ENDIAN is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(146): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(151): Macro `BYTEw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(152): Macro `dirty is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(152): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(162): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(162): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(164): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(166): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(167): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(170): Macro `slw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(186): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(186): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(188): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(188): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(189): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(189): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(205): Macro `valid is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(205): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(205): Macro `CLEAR is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(206): Macro `dirty is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(206): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(206): Macro `CLEAR is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(213): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(213): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(213): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(213): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(217): Macro `WORDw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(217): near "/":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(217): Macro `BYTEw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(222): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(222): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(226): Macro `valid is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(226): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(226): Macro `tag is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(226): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(228): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(228): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(245): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(245): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(251): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(252): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(252): near ";":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(255): near "end":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(264): Macro `CLOCK_REVER is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(267): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(267): near "*":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(267): near "+:":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(267): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(270): near "[":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(270): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(270): near "+":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(270): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(270): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(272): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(272): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(274): near "if": syntax error
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(277): near "[":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(277): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(277): near "+":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(277): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(277): near "/":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(277): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(279): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(279): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(279): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(280): near "end":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(284): near "[":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(284): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(284): near "+":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(284): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(284): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(286): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(286): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(287): near "end":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(291): near "[":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(291): Macro `dirty is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(291): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(295): near ";":  expecting: '#' '(' IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(299): near "end":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(307): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(307): near "*":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(307): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(307): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(321): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(321): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(334): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(334): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(344): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(344): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(347): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(349): Macro `CLEAR is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(349): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(359): Macro `dirty is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(359): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(371): Macro `tag is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(371): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(373): Macro `dirty is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(373): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(373): Macro `CLEAR is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(386): Macro `dirty is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(386): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(386): Macro `CLEAR is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(387): Macro `valid is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(387): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(387): Macro `SET is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(388): Macro `tag is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(388): near "]":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(401): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(402): Macro `slw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(403): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(407): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(416): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(417): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(434): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(435): Macro `slw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(445): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(451): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(456): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(456): near "*":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(456): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(457): near ";":  expecting: ')'
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(458): near ";":  expecting: ')'
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(459): near ";":  expecting: ')'
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(460): near "@":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(460): Macro `CLOCK_EDGE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(460): near ";": syntax error
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(461): Macro `CLOCK_EDGE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(462): near "#":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(482): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(483): Macro `slw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(493): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(498): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(503): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(505): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(505): near "*":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(505): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(511): near "begin":  expecting: ';'
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(512): Macro `CLOCK_EDGE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(513): near "#":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(520): near "=":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(521): Macro `CLOCK_EDGE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(522): near "while":  expecting: EVENT INTEGER REAL REALTIME REG TIME AUTOMATIC IDENT STRING
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(522): Macro `CLOCK_EDGE is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(524): near "[":  expecting: '#' '(' IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(524): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(524): Macro `dw is undefined.
+
+} {3.0 5.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 27.0 28.0 30.0 31.0 33.0 34.0 35.0 36.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 50.0 51.0 53.0 54.0 55.0 56.0 57.0 58.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 71.0 73.0 75.0 77.0 78.0 79.0 80.0 81.0 85.0 87.0 88.0 89.0 90.0 91.0 95.0 97.0 98.0 99.0 103.0 105.0 107.0 109.0 110.0 111.0 112.0 113.0 114.0 115.0 116.0 117.0 118.0 119.0 121.0 122.0 123.0 124.0 125.0 126.0 127.0 128.0 130.0 131.0 133.0 134.0 136.0 137.0 148.0 149.0 150.0 154.0 155.0 156.0 157.0 158.0 164.0 165.0 166.0 167.0 168.0 170.0 171.0 172.0 173.0 174.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(54): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(55): Cannot open `include file "define.h".
+-- Compiling module r2000_regfile
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(84): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(89): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(95): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(95): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(106): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(106): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(108): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(108): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(109): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(109): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(110): Macro `ZERO is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(110): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(112): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(112): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(113): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(113): near ")":  expecting: IDENT
+
+} {3.0 5.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_pipe
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(67): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(67): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(93): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(96): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(96): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(97): Macro `LOW is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(97): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(98): Macro `HIGH is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(98): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(100): Macro `HIGH is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(100): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(101): Macro `LOW is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(101): near ";":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_multiplier
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(74): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(74): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(107): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(107): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(113): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(113): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(114): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(114): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(155): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(155): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(156): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(156): near ")":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0 9.0 10.0 13.0 14.0 17.0 18.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(48): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(49): Cannot open `include file "define.h".
+-- Compiling module r2000_cmp
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(65): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(65): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(97): Macro `ZERO is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(97): near ")":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0 9.0 10.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_cpu
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(96): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(97): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(98): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(105): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(106): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(107): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(125): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(126): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(129): Macro `aw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(130): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(131): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(151): Macro `ICACHE_SIZE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(152): Macro `ICACHE_LINE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(153): Macro `ICACHE_ASSO is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(154): Macro `ICACHE_TPD is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(227): Macro `DCACHE_SIZE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(228): Macro `DCACHE_LINE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(229): Macro `DCACHE_ASSO is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(230): Macro `DCACHE_BACK is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(231): Macro `DCACHE_TPD is undefined.
+
+} {3.0 5.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_divisor
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(75): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(75): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(116): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(116): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(125): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(125): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(126): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(126): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(173): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(173): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(174): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(174): near ")":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0 9.0 10.0 13.0 14.0 17.0 18.0} {}}

@@ -132,7 +132,11 @@ module r2000_pipe_ctrl
 	// ---------------------------------------------- //
 	// MultDiv interlock :
 	//	Occur when mfhi, mflo read hi, lo registers while Mult/Div operation is not ready.
-	assign	Event_MultDivInterlock = (!ex_multdiv_rdy_i && ((id_ctl_exe_op_i == `hi_ptr)||(id_ctl_exe_op_i == `lo_ptr)));
+	assign	Event_MultDivInterlock =	!ex_multdiv_rdy_i
+`ifdef	MULTIPLE_ALU
+										&& ((id_ctl_exe_op_i == `hi_ptr)||(id_ctl_exe_op_i == `lo_ptr))
+`endif	// MULTIPLE_ALU
+										;
 	
 	// RAW Hazard :	
 	//	The control for the hazard detection unit is this single condition
@@ -156,51 +160,25 @@ module r2000_pipe_ctrl
 
 	always@(Event_Exception, Event_DCacheMiss, Event_ICacheMiss, Event_MultDivInterlock, Event_RawHazard)begin
 	
-			{IF_stall,	IFID_stall	,	IDEX_stall	, EXMEM_stall	, MEMWB_stall}	= {`LOW,`LOW,`LOW,`LOW,`LOW};
-			{							EX_freeze	, MEM_freeze	, WB_freeze}	= {     `HIGH,`HIGH,`HIGH};
-			{			IFID_flush	,	IDEX_flush	, EXMEM_flush	, MEMWB_flush}	= {`LOW,`LOW,`LOW,`LOW};
+			{IF_stall,	IFID_stall	,	IDEX_stall	, EXMEM_stall	, MEMWB_stall}	= {`LOW,	`LOW,	`LOW,	`LOW,	`LOW};
+			{							EX_freeze	, MEM_freeze	, WB_freeze}	= {					`HIGH,	`HIGH,	`HIGH};
+			{			IFID_flush	,	IDEX_flush	, EXMEM_flush	, MEMWB_flush}	= {			`LOW,	`LOW,	`LOW,	`LOW};
 		
 `ifdef	CP0
 		if (Event_Exception) begin
-			{			IFID_flush	,	IDEX_flush	, EXMEM_flush	, MEMWB_flush}	= {`HIGH,`HIGH,`HIGH,`HIGH};
+			{			IFID_flush	,	IDEX_flush	, EXMEM_flush	, MEMWB_flush}	= {			`HIGH,	`HIGH,	`HIGH,	`HIGH};
 		end else
 `endif	//CP0
 		if(Event_DCacheMiss) begin
-			{IF_stall,	IFID_stall	,	IDEX_stall	, EXMEM_stall	, MEMWB_stall}	= {`HIGH,`HIGH,`HIGH,`HIGH,`HIGH};
-			{							EX_freeze	, MEM_freeze	, WB_freeze}	= {     `LOW,`LOW,`LOW};
+			{IF_stall,	IFID_stall	,	IDEX_stall	, EXMEM_stall	, MEMWB_stall}	= {	`HIGH,	`HIGH,	`HIGH,	`HIGH,	`HIGH};
+			{							EX_freeze	, MEM_freeze	, WB_freeze}	= {					`LOW,	`LOW,	`LOW};
 			
-		end else if(Event_ICacheMiss || Event_MultDivInterlock || Event_RawHazard) begin
-			{IF_stall,	IFID_stall}				= {`HIGH,`HIGH};
-									IDEX_flush	= {     		`HIGH};
+		end else
+		if(Event_ICacheMiss || Event_MultDivInterlock || Event_RawHazard) begin
+			{IF_stall,	IFID_stall}													= {`HIGH,	`HIGH};
+										IDEX_flush									= {					`HIGH};
 
 		end		
 	end
-	/*
-	assign	wInterlock =	Event_MultDivInterlock | Event_RawHazard | Event_ICacheMiss;
-
-	assign IF_stall		= 	IFID_stall;
-	
-	assign {IFID_stall	,	IDEX_stall	, EXMEM_stall	, MEMWB_stall}	= {{wInterlock | Event_DCacheMiss}, Event_DCacheMiss, Event_DCacheMiss, Event_DCacheMiss};
-	assign {				EX_freeze	, MEM_freeze	, WB_freeze}	= {~Event_DCacheMiss, ~Event_DCacheMiss, ~Event_DCacheMiss};
-	
-`ifdef	CP0
-	assign {IFID_flush	,	IDEX_flush	, EXMEM_flush	, MEMWB_flush}	= {Event_Exception, {wInterlock | Event_Exception}, Event_Exception, Event_Exception};
-`else	//CP0
-	assign {IFID_flush	,	IDEX_flush	, EXMEM_flush	, MEMWB_flush}	= {`CLEAR, wInterlock, `CLEAR, `CLEAR};
-`endif	//CP0
-	*/
-
-		
-	/*
-   // priority of stall over flush
-		if (rst_i == `RESET_ON)
-			rQ = 0;		// reset synchronously
-		else if(stall_i == `HIGH)
-			rQ = rQ;	// don't update
-		else if(flush_i == `HIGH)//(suppress glith from the combinatorial calculeted flush signal)
-			rQ = 0;		// clear
-		else
-			rQ = D_i;	// else update
-	*/
 	
 endmodule

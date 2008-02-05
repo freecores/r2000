@@ -339,3 +339,7 @@
 `define BPL_ps		4'b0110
 `define BMI_ps		4'b1110
 
+/* ************************* */
+/* MULTIPLE ARITHEMTIC UNITS */
+/* ************************* */
+//`define MULTIPLE_ALU

@@ -422,3 +422,10 @@ date 		: 	13-01-2008
 - Create an account on www.opencores.org
 - Import the project on CVS
 - For know use CVS to facilitate the developpement
+
+05-02-2008
+- Working on the Exception Unit
+- remove the Multiple Arithmetic Units
+	- The Pipeline must stall when Mult/Div unit is busy.
+	- Whether there's a mflo or mfhi.
+	- see `define MULTIPLE_ALU
