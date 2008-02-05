@@ -119,7 +119,7 @@ module r2000_pipe_ctrl
    
 	// ---------------------------------------------- //
 	// When (RAW hazard) or (mult/div interlock) or (I-cache miss)	then	=>	: stall[PC, IF/ID], flush[ID/EX]
-	// When (D-cache miss)											then	=>	: stall[PC, IF/ID, ID/EX, EX/MEM, MEM/WB], freeze[EX, MEM, WB]
+	// When (D-cache miss)											then	=>	: stall[PC, IF/ID, ID/EX, EX/MEM], flush[MEM/WB], freeze[EX, MEM]
 	// When (eXception)												then	=>	: 
 	// ---------------------------------------------- //
 	// STALL : stop do not update the pipe
@@ -170,8 +170,8 @@ module r2000_pipe_ctrl
 		end else
 `endif	//CP0
 		if(Event_DCacheMiss) begin
-			{IF_stall,	IFID_stall	,	IDEX_stall	, EXMEM_stall	, MEMWB_stall}	= {	`HIGH,	`HIGH,	`HIGH,	`HIGH,	`HIGH};
-			{							EX_freeze	, MEM_freeze	, WB_freeze}	= {					`LOW,	`LOW,	`LOW};
+			{IF_stall,	IFID_stall	,	IDEX_stall	, EXMEM_stall	, MEMWB_flush}	= {	`HIGH,	`HIGH,	`HIGH,	`HIGH,	`HIGH};
+			{							EX_freeze	, MEM_freeze	}				= {					`LOW,	`LOW};
 			
 		end else
 		if(Event_ICacheMiss || Event_MultDivInterlock || Event_RawHazard) begin

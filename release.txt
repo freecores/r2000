@@ -429,3 +429,6 @@ date 		: 	13-01-2008
 	- The Pipeline must stall when Mult/Div unit is busy.
 	- Whether there's a mflo or mfhi.
 	- see `define MULTIPLE_ALU
+
+- When D-Cache miss, there's no need to stall MEMWB and freeze WB.
+	- The solution is to flush MEMWB only.

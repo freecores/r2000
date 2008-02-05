@@ -5,7 +5,7 @@
 //// This file is part of the r2000pl Pipelined				      ////
 ////	opencores effort.										  ////
 ////	Simple Pipelined Mips 32 bits processor				      ////
-//// <http://www.opencores.org/cores/YOUR DIRECTORY/>             ////
+//// <http://www.opencores.org/projects.cgi/web/r2000/>           ////
 ////                                                              ////
 //// Module Description:                                          ////
 //// Test bench of the r2000pl cpu  soc                           ////
