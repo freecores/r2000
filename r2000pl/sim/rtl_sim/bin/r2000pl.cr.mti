@@ -145,22 +145,15 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux2.v(65): Macro `dw is undefined.
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux2.v(65): near ";":  expecting: IDENT
 
-} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(46): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(47): Cannot open `include file "define.h".
--- Compiling module r2000_shifter
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(65): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(70): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(99): Macro `dw is undefined.
--- Compiling module r2000_selectshift
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_mux3
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(66): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(66): near ";":  expecting: IDENT
 
-} {3.0 5.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_msel.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_msel.v
-Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_msel.v(65): Cannot open `include file "wb_conmax_defines.v".
--- Compiling module wb_conmax_msel
-
-} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(56): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(57): Cannot open `include file "define.h".
@@ -256,28 +249,22 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(865): near ")":  expecting: IDENT
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu_pipe.v(865): near ";":  expecting: '(' IDENT
 
-} {3.0 5.0 30.0 32.0 33.0 35.0 36.0 38.0 39.0 40.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 49.0 50.0 51.0 53.0 54.0 55.0 56.0 57.0 58.0 59.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 70.0 71.0 72.0 73.0 74.0 75.0 76.0 77.0 79.0 81.0 82.0 84.0 85.0 87.0 88.0 90.0 91.0 93.0 94.0 96.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v
+} {3.0 5.0 30.0 32.0 33.0 35.0 36.0 38.0 39.0 40.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 49.0 50.0 51.0 53.0 54.0 55.0 56.0 57.0 58.0 59.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 70.0 71.0 72.0 73.0 74.0 75.0 76.0 77.0 79.0 81.0 82.0 84.0 85.0 87.0 88.0 90.0 91.0 93.0 94.0 96.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(46): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(47): Cannot open `include file "define.h".
--- Compiling module r2000_mux3
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(66): Macro `dw is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux3.v(66): near ";":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_shifter
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(65): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(70): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_shifter.v(99): Macro `dw is undefined.
+-- Compiling module r2000_selectshift
 
-} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_master_if.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_master_if.v
+} {3.0 5.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_msel.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_msel.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_master_if.v(65): Cannot open `include file "wb_conmax_defines.v".
--- Compiling module wb_conmax_master_if
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_msel.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_msel
 
-} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v
-Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(46): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(47): Cannot open `include file "define.h".
--- Compiling module r2000_mux4
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(67): Macro `dw is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(67): near ";":  expecting: IDENT
-
-} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(46): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(47): Cannot open `include file "define.h".
@@ -650,20 +637,20 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(459): near ")":  expecting: IDENT
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_decoder.v(459): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
 
-} {3.0 5.0 8.0 9.0 34.0 35.0 36.0 37.0 38.0 39.0 40.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 49.0 50.0 51.0 52.0 53.0 54.0 55.0 56.0 57.0 58.0 59.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 70.0 71.0 72.0 73.0 74.0 75.0 76.0 77.0 78.0 79.0 80.0 81.0 82.0 83.0 84.0 85.0 86.0 87.0 88.0 89.0 90.0 91.0 92.0 93.0 94.0 95.0 96.0 97.0 100.0 101.0 102.0 103.0 104.0 105.0 121.0 122.0 129.0 130.0 133.0 134.0 139.0 140.0 145.0 146.0 147.0 149.0 150.0 151.0 163.0 164.0 168.0 169.0 174.0 175.0 176.0 177.0 178.0 179.0 180.0 181.0 182.0 183.0 184.0 185.0 186.0 187.0 188.0 189.0 190.0 191.0 192.0 193.0 194.0 195.0 196.0 197.0 198.0 199.0 200.0 201.0 202.0 203.0 204.0 205.0 206.0 207.0 208.0 209.0 210.0 211.0 212.0 213.0 214.0 215.0 216.0 217.0 218.0 219.0 220.0 221.0 222.0 223.0 241.0 242.0 243.0 245.0 246.0 247.0 248.0 249.0 250.0 251.0 254.0 255.0 256.0 257.0 258.0 259.0 260.0 261.0 286.0 287.0 288.0 289.0 290.0 291.0 292.0 293.0 296.0 297.0 298.0 299.0 300.0 301.0 304.0 305.0 306.0 307.0 308.0 309.0 312.0 313.0 314.0 315.0 316.0 317.0 320.0 321.0 322.0 323.0 324.0 325.0 328.0 329.0 330.0 331.0 332.0 333.0 334.0 335.0 336.0 337.0 340.0 341.0 342.0 343.0 346.0 347.0 348.0 349.0 352.0 353.0 354.0 355.0 356.0 357.0 358.0 359.0 360.0 361.0 362.0 363.0 364.0 365.0 366.0 368.0 369.0 370.0 371.0 373.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_top.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_top.v
+} {3.0 5.0 8.0 9.0 34.0 35.0 36.0 37.0 38.0 39.0 40.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 49.0 50.0 51.0 52.0 53.0 54.0 55.0 56.0 57.0 58.0 59.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 70.0 71.0 72.0 73.0 74.0 75.0 76.0 77.0 78.0 79.0 80.0 81.0 82.0 83.0 84.0 85.0 86.0 87.0 88.0 89.0 90.0 91.0 92.0 93.0 94.0 95.0 96.0 97.0 100.0 101.0 102.0 103.0 104.0 105.0 121.0 122.0 129.0 130.0 133.0 134.0 139.0 140.0 145.0 146.0 147.0 149.0 150.0 151.0 163.0 164.0 168.0 169.0 174.0 175.0 176.0 177.0 178.0 179.0 180.0 181.0 182.0 183.0 184.0 185.0 186.0 187.0 188.0 189.0 190.0 191.0 192.0 193.0 194.0 195.0 196.0 197.0 198.0 199.0 200.0 201.0 202.0 203.0 204.0 205.0 206.0 207.0 208.0 209.0 210.0 211.0 212.0 213.0 214.0 215.0 216.0 217.0 218.0 219.0 220.0 221.0 222.0 223.0 241.0 242.0 243.0 245.0 246.0 247.0 248.0 249.0 250.0 251.0 254.0 255.0 256.0 257.0 258.0 259.0 260.0 261.0 286.0 287.0 288.0 289.0 290.0 291.0 292.0 293.0 296.0 297.0 298.0 299.0 300.0 301.0 304.0 305.0 306.0 307.0 308.0 309.0 312.0 313.0 314.0 315.0 316.0 317.0 320.0 321.0 322.0 323.0 324.0 325.0 328.0 329.0 330.0 331.0 332.0 333.0 334.0 335.0 336.0 337.0 340.0 341.0 342.0 343.0 346.0 347.0 348.0 349.0 352.0 353.0 354.0 355.0 356.0 357.0 358.0 359.0 360.0 361.0 362.0 363.0 364.0 365.0 366.0 368.0 369.0 370.0 371.0 373.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_top.v(65): Cannot open `include file "wb_conmax_defines.v".
--- Compiling module wb_conmax_top
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_mux4
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(67): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux4.v(67): near ";":  expecting: IDENT
 
-} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_master_if.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_master_if.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(46): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(47): Cannot open `include file "define.h".
--- Compiling module r2000_mux5
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(68): Macro `dw is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(68): near ";":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_master_if.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_master_if
 
-} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(46): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(47): Cannot open `include file "define.h".
@@ -705,7 +692,20 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(96): Macro `aluop_tra is undefined.
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_aluctrl.v(98): Macro `aluop_add is undefined.
 
-} {3.0 5.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0 24.0 25.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v
+} {3.0 5.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0 24.0 25.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_mux5
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(68): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux5.v(68): near ";":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_top.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_top.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_top.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_top
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v(46): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v(47): Cannot open `include file "define.h".
@@ -713,7 +713,32 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v(69): Macro `dw is undefined.
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_mux7.v(69): near ";":  expecting: IDENT
 
-} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v
+} {3.0 5.0 7.0 8.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(49): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(50): Cannot open `include file "define.h".
+-- Compiling module r2000_alu
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(70): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(70): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(110): Macro `aluop_add is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(110): near ":":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(111): Macro `aluop_sub is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(112): Macro `aluop_and is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(113): Macro `aluop_or is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(114): Macro `aluop_xor is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(115): Macro `aluop_nor is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(116): Macro `aluop_sltu is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(116): Macro `ONE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(116): Macro `ZERO is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(117): Macro `aluop_slt is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(117): Macro `ONE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(117): Macro `ZERO is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(124): Macro `ZERO is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(124): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(126): Macro `aluop_sub is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(126): near ")":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0 9.0 10.0 22.0 23.0 24.0 25.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(46): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(47): Cannot open `include file "define.h".
@@ -768,32 +793,17 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(568): Macro `dw is undefined.
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000_soc.v(582): Macro `dw is undefined.
 
-} {3.0 5.0 20.0 21.0 26.0 27.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v
+} {3.0 5.0 20.0 21.0 26.0 27.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(49): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(50): Cannot open `include file "define.h".
--- Compiling module r2000_alu
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(70): Macro `dw is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(70): near ";":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(110): Macro `aluop_add is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(110): near ":":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(111): Macro `aluop_sub is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(112): Macro `aluop_and is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(113): Macro `aluop_or is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(114): Macro `aluop_xor is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(115): Macro `aluop_nor is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(116): Macro `aluop_sltu is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(116): Macro `ONE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(116): Macro `ZERO is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(117): Macro `aluop_slt is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(117): Macro `ONE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(117): Macro `ZERO is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(124): Macro `ZERO is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(124): near ")":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(126): Macro `aluop_sub is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_alu.v(126): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(45): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(46): Cannot open `include file "define.h".
+-- Compiling module r2000_cp0
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(97): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(98): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(107): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(108): Macro `dw is undefined.
 
-} {3.0 5.0 7.0 8.0 9.0 10.0 22.0 23.0 24.0 25.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v
+} {3.0 5.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(47): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(48): Cannot open `include file "define.h".
@@ -831,78 +841,17 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(140): Macro `BRANCH_UNCOND is undefined.
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_bradecoder.v(145): Macro `BRANCH_NO is undefined.
 
-} {3.0 5.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0 23.0 24.0 25.0 26.0 28.0 29.0 30.0 31.0 32.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v
-Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(45): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(46): Cannot open `include file "define.h".
--- Compiling module r2000_cp0
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(97): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(98): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(107): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cp0.v(108): Macro `dw is undefined.
-
-} {3.0 5.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/mem/asram_core.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/mem/asram_core.v
-Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/mem/asram_core.v(33): Cannot open `include file "timescale.v".
--- Compiling module asram_core
-
-} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_rf.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_rf.v
+} {3.0 5.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0 23.0 24.0 25.0 26.0 28.0 29.0 30.0 31.0 32.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_rf.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_rf.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_rf.v(65): Cannot open `include file "wb_conmax_defines.v".
 -- Compiling module wb_conmax_rf
 
-} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_slave_if.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_slave_if.v
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/mem/asram_core.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/mem/asram_core.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_slave_if.v(65): Cannot open `include file "wb_conmax_defines.v".
--- Compiling module wb_conmax_slave_if
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/mem/asram_core.v(33): Cannot open `include file "timescale.v".
+-- Compiling module asram_core
 
-} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v
-Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(50): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(51): Cannot open `include file "define.h".
--- Compiling module r2000_multdiv
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(82): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(88): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(93): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(100): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(107): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(113): Macro `dw is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(135): Macro `SET is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(135): near ")":  expecting: IDENT
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(135): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(165): Macro `CLOCK_EDGE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(211): Macro `CLOCK_EDGE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(211): Macro `RESET_EDGE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(213): Macro `RESET_ON is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(213): near ")":  expecting: IDENT
-
-} {3.0 5.0 13.0 15.0 19.0 20.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v
-Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(46): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(47): Cannot open `include file "define.h".
--- Compiling module r2000_forward
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(70): Macro `iw is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(70): near ";":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(99): Macro `zer0 is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(99): near ")":  expecting: IDENT
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(99): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(101): Macro `zer0 is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(101): near ")":  expecting: IDENT
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(101): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(103): Macro `zer0 is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(103): near ")":  expecting: IDENT
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(103): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(106): Macro `zer0 is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(106): near ")":  expecting: IDENT
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(106): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(108): Macro `zer0 is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(108): near ")":  expecting: IDENT
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(108): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(110): Macro `zer0 is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(110): near ")":  expecting: IDENT
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(110): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
-
-} {3.0 5.0 7.0 8.0 9.0 11.0 12.0 14.0 15.0 17.0 18.0 20.0 21.0 23.0 24.0 26.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(56): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(57): Cannot open `include file "define.h".
@@ -1078,7 +1027,77 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(524): Macro `dw is undefined.
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_d-cache.v(524): Macro `dw is undefined.
 
-} {3.0 5.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 27.0 28.0 30.0 31.0 33.0 34.0 35.0 36.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 50.0 51.0 53.0 54.0 55.0 56.0 57.0 58.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 71.0 73.0 75.0 77.0 78.0 79.0 80.0 81.0 85.0 87.0 88.0 89.0 90.0 91.0 95.0 97.0 98.0 99.0 103.0 105.0 107.0 109.0 110.0 111.0 112.0 113.0 114.0 115.0 116.0 117.0 118.0 119.0 121.0 122.0 123.0 124.0 125.0 126.0 127.0 128.0 130.0 131.0 133.0 134.0 136.0 137.0 148.0 149.0 150.0 154.0 155.0 156.0 157.0 158.0 164.0 165.0 166.0 167.0 168.0 170.0 171.0 172.0 173.0 174.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v
+} {3.0 5.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 27.0 28.0 30.0 31.0 33.0 34.0 35.0 36.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 48.0 50.0 51.0 53.0 54.0 55.0 56.0 57.0 58.0 60.0 61.0 62.0 63.0 64.0 65.0 66.0 67.0 68.0 69.0 71.0 73.0 75.0 77.0 78.0 79.0 80.0 81.0 85.0 87.0 88.0 89.0 90.0 91.0 95.0 97.0 98.0 99.0 103.0 105.0 107.0 109.0 110.0 111.0 112.0 113.0 114.0 115.0 116.0 117.0 118.0 119.0 121.0 122.0 123.0 124.0 125.0 126.0 127.0 128.0 130.0 131.0 133.0 134.0 136.0 137.0 148.0 149.0 150.0 154.0 155.0 156.0 157.0 158.0 164.0 165.0 166.0 167.0 168.0 170.0 171.0 172.0 173.0 174.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_forward
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(70): Macro `iw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(70): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(99): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(99): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(99): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(101): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(101): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(101): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(103): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(103): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(103): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(106): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(106): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(106): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(108): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(108): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(108): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(110): Macro `zer0 is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(110): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_forward.v(110): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+
+} {3.0 5.0 7.0 8.0 9.0 11.0 12.0 14.0 15.0 17.0 18.0 20.0 21.0 23.0 24.0 26.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(50): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(51): Cannot open `include file "define.h".
+-- Compiling module r2000_multdiv
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(82): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(88): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(93): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(100): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(107): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(113): Macro `dw is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(135): Macro `SET is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(135): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(135): near ";":  expecting: '!' ')' '@' -> <-> |-> |=>
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(165): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(211): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(211): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(213): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multdiv.v(213): near ")":  expecting: IDENT
+
+} {3.0 5.0 13.0 15.0 19.0 20.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_slave_if.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_slave_if.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/conmax/wb_conmax_slave_if.v(65): Cannot open `include file "wb_conmax_defines.v".
+-- Compiling module wb_conmax_slave_if
+
+} {3.0 4.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v
+Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_pipe
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(67): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(67): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(93): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(96): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(96): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(97): Macro `LOW is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(97): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(98): Macro `HIGH is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(98): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(100): Macro `HIGH is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(100): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(101): Macro `LOW is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(101): near ";":  expecting: IDENT
+
+} {3.0 5.0 7.0 8.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(54): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(55): Cannot open `include file "define.h".
@@ -1100,26 +1119,7 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(113): Macro `zer0 is undefined.
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_regfile.v(113): near ")":  expecting: IDENT
 
-} {3.0 5.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v
-Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(46): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(47): Cannot open `include file "define.h".
--- Compiling module r2000_pipe
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(67): Macro `dw is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(67): near ";":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(93): Macro `CLOCK_EDGE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(96): Macro `RESET_ON is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(96): near ")":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(97): Macro `LOW is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(97): near ";":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(98): Macro `HIGH is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(98): near ")":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(100): Macro `HIGH is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(100): near ")":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(101): Macro `LOW is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_pipe.v(101): near ";":  expecting: IDENT
-
-} {3.0 5.0 7.0 8.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v
+} {3.0 5.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(46): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(47): Cannot open `include file "define.h".
@@ -1137,17 +1137,25 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(156): Macro `RESET_ON is undefined.
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_multiplier.v(156): near ")":  expecting: IDENT
 
-} {3.0 5.0 7.0 8.0 9.0 10.0 13.0 14.0 17.0 18.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v
+} {3.0 5.0 7.0 8.0 9.0 10.0 13.0 14.0 17.0 18.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(48): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(49): Cannot open `include file "define.h".
--- Compiling module r2000_cmp
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(65): Macro `dw is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(65): near ";":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(97): Macro `ZERO is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(97): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(46): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(47): Cannot open `include file "define.h".
+-- Compiling module r2000_divisor
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(75): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(75): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(116): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(116): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(125): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(125): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(126): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(126): near ")":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(173): Macro `CLOCK_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(173): Macro `RESET_EDGE is undefined.
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(174): Macro `RESET_ON is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(174): near ")":  expecting: IDENT
 
-} {3.0 5.0 7.0 8.0 9.0 10.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v
+} {3.0 5.0 7.0 8.0 9.0 10.0 13.0 14.0 17.0 18.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(46): Cannot open `include file "timescale.v".
 ** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(47): Cannot open `include file "define.h".
@@ -1173,22 +1181,14 @@ Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(230): Macro `DCACHE_BACK is undefined.
 ** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_cpu.v(231): Macro `DCACHE_TPD is undefined.
 
-} {3.0 5.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v
+} {3.0 5.0} {}} C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v {0 {vlog -work work C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v
 Model Technology ModelSim SE vlog 6.0c Compiler 2005.02 Feb  2 2005
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(46): Cannot open `include file "timescale.v".
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(47): Cannot open `include file "define.h".
--- Compiling module r2000_divisor
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(75): Macro `dw is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(75): near ";":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(116): Macro `RESET_ON is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(116): near ")":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(125): Macro `CLOCK_EDGE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(125): Macro `RESET_EDGE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(126): Macro `RESET_ON is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(126): near ")":  expecting: IDENT
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(173): Macro `CLOCK_EDGE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(173): Macro `RESET_EDGE is undefined.
-** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(174): Macro `RESET_ON is undefined.
-** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_divisor.v(174): near ")":  expecting: IDENT
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(48): Cannot open `include file "timescale.v".
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(49): Cannot open `include file "define.h".
+-- Compiling module r2000_cmp
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(65): Macro `dw is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(65): near ";":  expecting: IDENT
+** Warning: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(97): Macro `ZERO is undefined.
+** Error: C:/CVSROOT/r2000/r2000pl/rtl/verilog/r2000/r2000_comparator.v(97): near ")":  expecting: IDENT
 
-} {3.0 5.0 7.0 8.0 9.0 10.0 13.0 14.0 17.0 18.0} {}}
+} {3.0 5.0 7.0 8.0 9.0 10.0} {}}

@@ -9,11 +9,11 @@
 </project>
 
 <workspace version="Crimson Editor 3.60">
-	<localfile path="C:\CVSROOT\r2000\r2000pl\rtl\verilog\r2000\r2000_pipe_ctrl.v" linenum="136" placement="2:3:-1:-1:-4:-23:0:0:652:595" />
+	<localfile path="C:\CVSROOT\r2000\r2000pl\rtl\verilog\r2000\r2000_pipe_ctrl.v" linenum="1" placement="0:1:-1:-1:-4:-23:0:0:652:595" />
 	<localfile path="C:\CVSROOT\r2000\r2000pl\rtl\verilog\r2000\r2000_cpu_pipe.v" linenum="528" placement="0:1:-1:-1:-4:-23:22:22:678:621" />
-	<localfile path="C:\CVSROOT\r2000\release.txt" linenum="395" placement="0:1:-1:-1:-4:-23:132:132:987:731" />
+	<localfile path="C:\CVSROOT\r2000\release.txt" linenum="416" placement="0:1:-1:-1:-4:-23:132:132:987:731" />
 	<localfile path="C:\CVSROOT\r2000\r2000pl\rtl\verilog\r2000\r2000_cp0.v" linenum="1" placement="0:1:-1:-1:-4:-23:176:176:1031:775" />
 	<localfile path="C:\CVSROOT\r2000\r2000pl\rtl\verilog\r2000\define.h" linenum="319" placement="0:1:-1:-1:-4:-23:264:264:1119:863" />
-	<localfile path="C:\CVSROOT\r2000\r2000pl\bench\verilog\tb_r2000_soc.v" linenum="1" placement="0:1:-1:-1:-4:-23:286:286:1141:885" />
+	<localfile path="C:\CVSROOT\r2000\r2000pl\bench\verilog\tb_r2000_soc.v" linenum="272" placement="2:3:-1:-1:-4:-23:286:286:1141:885" />
 </workspace>
 

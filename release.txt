@@ -432,3 +432,7 @@ date 		: 	13-01-2008
 
 - When D-Cache miss, there's no need to stall MEMWB and freeze WB.
 	- The solution is to flush MEMWB only.
+	
+06-02-2008
+- Add Pipeline Controler specification documentation
+- Enhancement of the "Controler specification doc"
