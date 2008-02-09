@@ -436,3 +436,7 @@ date 		: 	13-01-2008
 06-02-2008
 - Add Pipeline Controler specification documentation
 - Enhancement of the "Controler specification doc"
+
+09-02-2008
+- To simplify the exception traitement: Instruction are executed serialy.
+- Exception event must be treated CONCURRENTLY with the other event that stall the pipeline.
