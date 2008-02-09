@@ -132,8 +132,9 @@ module r2000_pipe_ctrl
 	// ---------------------------------------------- //
 	// MultDiv interlock :
 	//	Occur when mfhi, mflo read hi, lo registers while Mult/Div operation is not ready.
-	assign	Event_MultDivInterlock =	!ex_multdiv_rdy_i
+	assign	Event_MultDivInterlock =	~ex_multdiv_rdy_i
 `ifdef	MULTIPLE_ALU
+	// To simplify the exception traitement: Instruction are executed serialy.
 										&& ((id_ctl_exe_op_i == `hi_ptr)||(id_ctl_exe_op_i == `lo_ptr))
 `endif	// MULTIPLE_ALU
 										;
