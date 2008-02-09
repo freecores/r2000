@@ -272,7 +272,7 @@ module r2000_cpu_pipe
 	/* ********************* */
 	// ---------------------------------------------- //
 	// When (RAW hazard) or (mult/div interlock) or (I-cache miss)	then	=>	: stall[PC, IF/ID], flush[ID/EX]
-	// When (D-cache miss)											then	=>	: stall[PC, IF/ID, ID/EX, EX/MEM, MEM/WB], freeze[EX, MEM, WB]
+	// When (D-cache miss)											then	=>	: stall[PC, IF/ID, ID/EX, EX/MEM], flush[MEM/WB], freeze[EX, MEM]
 	// When (eXception)												then	=>	: 
 	// ---------------------------------------------- //
 	// STALL : stop do not update the pipe
