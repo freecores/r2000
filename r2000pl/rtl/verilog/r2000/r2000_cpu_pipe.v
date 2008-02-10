@@ -243,9 +243,9 @@ module r2000_cpu_pipe
 	// co-processor 0
 	wire				ID_sig_clt_sys		,	EX_sig_clt_sys	,	MEM_sig_clt_sys		;
 	wire				ID_sig_clt_brk		,	EX_sig_clt_brk	,	MEM_sig_clt_brk		;
-	wire				ID_clt_rfe			,	EX_clt_rfe		,	MEM_clt_rfe			;
+	wire				ID_clt_rfe			,	EX_clt_rfe		,	MEM_clt_rfe			,	WB_clt_rfe	;	
 	wire				ID_clt_CoMf			;
-	wire				ID_clt_CoMt			,	EX_clt_CoMt		,	MEM_clt_CoMt		;
+	wire				ID_clt_CoMt			,	EX_clt_CoMt		,	MEM_clt_CoMt		,	WB_clt_CoMt	;
 `ifdef	EXCEPTION
 	wire [`dw-1:0]		IF_EPC				,	ID_EPC			,	EX_EPC				,	MEM_EPC		;
 	reg	 [4:0]			IF_EXC				,	ID_EXC			,	EX_EXC				,	MEM_EXC		;
@@ -260,7 +260,7 @@ module r2000_cpu_pipe
 	wire [1:0]			MEM_sig_si			;
 	
 	wire				wException			;
-	wire [`dw-1:0]		MEM_cp0_dout		;
+	wire [`dw-1:0]		WB_cp0_dout			;
 `endif	//EXCEPTION	
 	
 /* --------------------------------------------------------------
@@ -438,7 +438,7 @@ module r2000_cpu_pipe
 								(rt_sel == 2) ? 	MEM_RegDatain			:
 								(rt_sel == 3) ? 	WB_RegDatain			:
 `ifdef	EXCEPTION
-													(ID_clt_CoMf)	?	MEM_cp0_dout	: 
+													(ID_clt_CoMf)	?	WB_cp0_dout	: 
 `endif	//EXCEPTION
 													ID_reg_rt				;
 
@@ -823,14 +823,14 @@ module r2000_cpu_pipe
 	r2000_cp0	unit_cp0
 	(
 		// Register transfert
-		.rw_i			(MEM_clt_CoMt)		,	// Read/Write Signal
-		.addr_rw_i		(MEM_rd_index)		,	// Adress of the register Write
-		.data_i			(MEM_RegDatain)		,	// Data in the register
+		.rw_i			(WB_clt_CoMt)		,	// Read/Write Signal
+		.addr_rw_i		(WB_rd_index)		,	// Adress of the register Write
+		.data_i			(WB_RegDatain)		,	// Data in the register
 		
 		.addr_rd_i		(ID_rd_index)		,	// Adress of the register Read
-		.data_o			(MEM_cp0_dout)		,	// Data out of the register
+		.data_o			(WB_cp0_dout)		,	// Data out of the register
 		
-		.rfe_i			(MEM_clt_rfe)		,	// Signal of the rfe instruction
+		.rfe_i			(WB_clt_rfe)		,	// Signal of the rfe instruction
 		
 		// Exception events signals
 		.brch_i			(MEM_branch_Slot)	,	// Detect exception in Branch Slot 
@@ -866,6 +866,10 @@ module r2000_cpu_pipe
 	r2000_pipe #(`dw) MEMWB_regdatain_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_RegDatain)	,	.Q_o(WB_RegDatain) );
 	r2000_pipe #(`iw) MEMWB_rd_pipe 			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_rd_index)		,	.Q_o(WB_rd_index) );
 	
+`ifdef	EXCEPTION
+	r2000_pipe #(  1) MEMWB_comt_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush) , .D_i(MEM_clt_CoMt)	,	.Q_o(WB_clt_CoMt) );
+	r2000_pipe #(  1) MEMWB_rfe_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush) , .D_i(MEM_clt_rfe)		,	.Q_o(WB_clt_rfe) );
+`endif	//EXCEPTION
 	/*======================================================================================================================================================*/
 	/*	WB:Write Back STAGE								*/
 	/*======================================================================================================================================================*/

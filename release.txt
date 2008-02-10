@@ -447,3 +447,4 @@ date 		: 	13-01-2008
 - Exception/interruption signals must be stalled, flushed, stoped or cleared(except reset)
 	- Look at 14-07-2007
 - UnFonctional Modifications: Change the name of the address port of "CP0".
+- Read/Write of the CP0 register is in the WB stage, but Exception detection begin from the MEM stage.
