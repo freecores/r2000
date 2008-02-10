@@ -67,10 +67,10 @@ module r2000_soc
 		RAM_bleh_o		,	// Byte Memory Low enable
 		RAM_bheh_o		,	// Byte Memory High Enable
 		
-`ifdef	CP0
+`ifdef	EXCEPTION
 		SIG_int_i		,	// Interrupt exception
 		SIG_si_i		,	// Software Interrupt
-`endif	//CP0
+`endif	//EXCEPTION
 
 		clk_i			,	// Clock
 		rst_i				// Reset
@@ -93,10 +93,10 @@ module r2000_soc
 	output					RAM_bleh_o		;
 	output					RAM_bheh_o		;
 		
-`ifdef	CP0
+`ifdef	EXCEPTION
 	input[5:0]				SIG_int_i		;
 	input[1:0]				SIG_si_i		;
-`endif	//CP0
+`endif	//EXCEPTION
 
 	input					clk_i			;
 	input					rst_i			;
@@ -186,10 +186,10 @@ module r2000_soc
 		.WB_D_RTY		(WB_D_RTY		),
 		.WB_D_ERR		(WB_D_ERR		),
 
-`ifdef	CP0
+`ifdef	EXCEPTION
 		.SIG_int_i		(SIG_int_i		),	// Interrupt exception
 		.SIG_si_i		(SIG_si_i		),	// Software Interrupt
-`endif	//CP0
+`endif	//EXCEPTION
 
 		.clk_i			(clk_i			),	// Clock
 		.rst_i			(rst_i			)	// Reset

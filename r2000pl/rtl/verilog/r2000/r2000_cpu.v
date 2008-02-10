@@ -82,10 +82,10 @@ module r2000_cpu
 		WB_D_RTY		,
 		WB_D_ERR		,
 		
-`ifdef	CP0
+`ifdef	EXCEPTION
 		SIG_int_i		,	// Interrupt exception
 		SIG_si_i		,	// Software Interrupt
-`endif	//CP0
+`endif	//EXCEPTION
 
 		clk_i			,	// Clock
 		rst_i				// Reset
@@ -111,10 +111,10 @@ module r2000_cpu
 	input					WB_D_ACK, WB_D_RTY	;
 	input					WB_D_ERR			;
 	
-`ifdef	CP0
+`ifdef	EXCEPTION
 	input[5:0]				SIG_int_i		;
 	input[1:0]				SIG_si_i		;
-`endif	//CP0
+`endif	//EXCEPTION
 
 	input					clk_i			;
 	input					rst_i			;
@@ -208,10 +208,10 @@ module r2000_cpu
 		.mem_data_en_o		(wMem_data_en)	,
 		.mem_data_width_o	(wMem_data_width),	// Byte Memory Width
 
-`ifdef	CP0
+`ifdef	EXCEPTION
 		.sig_int_i			(SIG_int_i)		,	// Interrupt exception
 		.sig_si_i			(SIG_si_i)		,	// Software Interrupt
-`endif	//CP0	
+`endif	//EXCEPTION	
 	/* ~~~~~~~~~~~~~ */		                	
 	/* CLOCK & RESET */
 	/* ~~~~~~~~~~~~~ */		                	

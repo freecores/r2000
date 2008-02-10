@@ -112,7 +112,7 @@ module	r2000_cp0
 	input				rst_i		;
 	input				clk_i		;
 	
-`ifdef	CP0
+`ifdef	EXCEPTION
 
 /* -------------------------------------------------------------- */
 /* registers, wires declaration */
@@ -257,5 +257,5 @@ module	r2000_cp0
 	assign PC_vec_o = rPC_vec;
 	
 	
-`endif	//CP0
+`endif	//EXCEPTION
 endmodule

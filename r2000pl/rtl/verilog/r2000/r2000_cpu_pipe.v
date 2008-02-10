@@ -85,10 +85,10 @@ module r2000_cpu_pipe
 		mem_data_bheh_o	,	// Byte Memory High Enable
 `endif// DCACHE
 		
-`ifdef	CP0
+`ifdef	EXCEPTION
 		sig_int_i		,	// Interrupt exception
 		sig_si_i		,	// Software Interrupt
-`endif	//CP0	
+`endif	//EXCEPTION	
 
 		clk_i			,	// Clock
 		rst_i				// Reset
@@ -117,10 +117,10 @@ module r2000_cpu_pipe
 	output					mem_data_bleh_o	;
 `endif// DCACHE
 		
-`ifdef	CP0
+`ifdef	EXCEPTION
 	input[5:0]				sig_int_i		;
 	input[1:0]				sig_si_i		;
-`endif	//CP0	
+`endif	//EXCEPTION	
 
 	input					clk_i			;
 	input					rst_i			;
@@ -159,10 +159,10 @@ module r2000_cpu_pipe
 	wire [3:0]			ID_ctl_branch_cond	;
 	wire [3:0]			ID_cmp_status		;
 	wire [`SELWIDTH-1:0]ID_mux_branch_sel	
-`ifdef	CP0
+`ifdef	EXCEPTION
 											,	EX_mux_branch_sel	,	MEM_mux_branch_sel	;
 	reg					MEM_branch_Slot			// Detect branch slot when exception
-`endif	//CP0	
+`endif	//EXCEPTION	
 											;
 	
 	// alu unit
@@ -246,7 +246,7 @@ module r2000_cpu_pipe
 	wire				ID_clt_rfe			,	EX_clt_rfe		,	MEM_clt_rfe			;
 	wire				ID_clt_CoMf			;
 	wire				ID_clt_CoMt			,	EX_clt_CoMt		,	MEM_clt_CoMt		;
-`ifdef	CP0
+`ifdef	EXCEPTION
 	wire [`dw-1:0]		IF_EPC				,	ID_EPC			,	EX_EPC				,	MEM_EPC		;
 	reg	 [4:0]			IF_EXC				,	ID_EXC			,	EX_EXC				,	MEM_EXC		;
 	wire [`dw-1:0]		wEPC_Vector			;
@@ -261,7 +261,7 @@ module r2000_cpu_pipe
 	
 	wire				wException			;
 	wire [`dw-1:0]		MEM_cp0_dout		;
-`endif	//CP0	
+`endif	//EXCEPTION	
 	
 /* --------------------------------------------------------------
 	instances, statements
@@ -339,10 +339,10 @@ module r2000_cpu_pipe
 	r2000_pipe #(`dw) IFID_pc_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IFID_stall) , .flush_i(IFID_flush) , .D_i(IF_PCplus4)			,	.Q_o(ID_PCplus4) );
 	r2000_pipe #(`dw) IFID_inst_pipe	(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IFID_stall) , .flush_i(IFID_flush) , .D_i(mem_code_inst_i)	,	.Q_o(ID_inst) );
 
-`ifdef	CP0
+`ifdef	EXCEPTION
 	assign	IF_EPC = wPC;
 	r2000_pipe #(`dw) IFID_epc_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IFID_stall) , .flush_i(IFID_flush) , .D_i(IF_EPC)				,	.Q_o(ID_EPC) );
-`endif	//CP0
+`endif	//EXCEPTION
 
 	/*======================================================================================================================================================*/
 	/*	ID:Instruction Decode STAGE						*/
@@ -429,17 +429,17 @@ module r2000_cpu_pipe
 	assign ID_reg_rs_forward =	(rs_sel == 1) ? 	EX_result_operation		:
 								(rs_sel == 2) ?		MEM_RegDatain			:
 								(rs_sel == 3) ? 	WB_RegDatain			:
-`ifdef	CP0
+`ifdef	EXCEPTION
 													(ID_clt_CoMt || ID_clt_CoMf)	?	`ZERO	: //Suppress the influence of rs field wich is MT=00100
-`endif	//CP0
+`endif	//EXCEPTION
 													ID_reg_rs				;
 													
 	assign ID_reg_rt_forward =	(rt_sel == 1) ? 	EX_result_operation		:
 								(rt_sel == 2) ? 	MEM_RegDatain			:
 								(rt_sel == 3) ? 	WB_RegDatain			:
-`ifdef	CP0
+`ifdef	EXCEPTION
 													(ID_clt_CoMf)	?	MEM_cp0_dout	: 
-`endif	//CP0
+`endif	//EXCEPTION
 													ID_reg_rt				;
 
 	/* *********************** */
@@ -451,7 +451,7 @@ module r2000_cpu_pipe
 	assign wTargetBranch	= { {14{wAdresse16[15]}}, wAdresse16, 2'b0 };	// -- Branch value
 	assign wTargetJump		= { ID_PCplus4[31:28]	, wAdresse26, 2'b0 };	// -- Jump value
 	
-`ifdef	CP0
+`ifdef	EXCEPTION
 	r2000_mux5 #(`aw) mux_pc
 	(	/* Input */
 		.in0_i		(IF_PCplus4),					// 		from the pc + 4...
@@ -475,7 +475,7 @@ module r2000_cpu_pipe
 		/* Output */
 		.out_o		(ID_mux_pc_out)					// the new pc value choice
 	);
-`endif	//CP0
+`endif	//EXCEPTION
 
 	assign ID_PCplus8 = ID_PCplus4 + 4;			// the pc + 4 was executed in the delay slot so store the pc + 8
 	
@@ -494,9 +494,9 @@ module r2000_cpu_pipe
 		.BranchType_i	(ID_ctl_branch_type),	// branch type
 		.CondSel_i		(ID_ctl_branch_cond),	// branch condition
 		.Status_i		(ID_cmp_status)		,	// status flags from the alu
-`ifdef	CP0
+`ifdef	EXCEPTION
 		.Exception_i	(wException)		,	// Exception has occured
-`endif	//CP0
+`endif	//EXCEPTION
 		/* Output */
 		.BranchSel_o    (ID_mux_branch_sel)		// the branch type of the pc
 	);
@@ -583,7 +583,7 @@ module r2000_cpu_pipe
 	r2000_pipe #(`dw) IDEX_up_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_imup)					,	.Q_o(EX_imup) );
 	r2000_pipe #(`iw) IDEX_rd_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_mux_rd_index_out)		,	.Q_o(EX_rd_index) );
 	                                                                                                                                                        	
-`ifdef	CP0                                                                                                                                                 	
+`ifdef	EXCEPTION                                                                                                                                                 	
 	r2000_pipe #(  1) IDEX_sig_brk_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR) 		, .D_i(ID_sig_clt_brk)			,	.Q_o(EX_sig_clt_brk) );
 	r2000_pipe #(  1) IDEX_sig_sys_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR) 		, .D_i(ID_sig_clt_sys)			,	.Q_o(EX_sig_clt_sys) );
 	                                                                                                                                                        	
@@ -591,7 +591,7 @@ module r2000_cpu_pipe
 	r2000_pipe #(  1) IDEX_comt_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_clt_CoMt)				,	.Q_o(EX_clt_CoMt) );
 	r2000_pipe #(`dw) IDEX_epc_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_EPC)					,	.Q_o(EX_EPC) );
 	r2000_pipe #(`SELWIDTH) IDEX_brc_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_mux_branch_sel)		,	.Q_o(EX_mux_branch_sel) );
-`endif	//CP0
+`endif	//EXCEPTION
 	/*======================================================================================================================================================*/
 	/*	EX:Execution STAGE								*/
 	/*======================================================================================================================================================*/
@@ -633,10 +633,10 @@ module r2000_cpu_pipe
 		.AluOut_o		(EX_alu_out)		,	// alu result
 		.Status_o		(EX_AluStatus)			// status flags
 	);
-`ifdef	CP0
+`ifdef	EXCEPTION
 	assign {EX_Carry, EX_Zero, EX_Neg, EX_ovf} = EX_AluStatus;	// Alu Status
 	assign EX_sig_ovf = EX_ovf;
-`endif	//CP0	
+`endif	//EXCEPTION	
 	
 	/* SHIFTER AMOUNT SOURCE */
 	r2000_mux2  #(5)   mux_shift_variable
@@ -716,7 +716,7 @@ module r2000_cpu_pipe
 	r2000_pipe #(`iw) EXMEM_rd_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_rd_index)			,	.Q_o(MEM_rd_index) );
 	r2000_pipe #(`dw) EXMEM_rt_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_reg_rt)			,	.Q_o(MEM_reg_rt) );
 	
-`ifdef	CP0
+`ifdef	EXCEPTION
 	r2000_pipe #(  1) EXMEM_sig_brk_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR)		, .D_i(EX_sig_clt_brk)		,	.Q_o(MEM_sig_clt_brk) );
 	r2000_pipe #(  1) EXMEM_sig_sys_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR)		, .D_i(EX_sig_clt_sys)		,	.Q_o(MEM_sig_clt_sys) );
 	r2000_pipe #(  6) EXMEM_sig_int_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR)		, .D_i(sig_int_i)			,	.Q_o(MEM_sig_int) );
@@ -727,7 +727,7 @@ module r2000_cpu_pipe
 	r2000_pipe #(  1) EXMEM_rfe_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_clt_rfe)			,	.Q_o(MEM_clt_rfe) );
 	r2000_pipe #(`dw) EXMEM_epc_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_EPC)				,	.Q_o(MEM_EPC) );
 	r2000_pipe #(`SELWIDTH) EXMEM_brc_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_mux_branch_sel)	,	.Q_o(MEM_mux_branch_sel) );
-`endif	//CP0	
+`endif	//EXCEPTION	
 	/*======================================================================================================================================================*/
 	/*	MEM:Memory STAGE								*/
 	/*======================================================================================================================================================*/
@@ -805,7 +805,7 @@ module r2000_cpu_pipe
 		.out_o			(MEM_RegDatain)     		//		the result write back to the registerfile
 	);
 
-`ifdef	CP0
+`ifdef	EXCEPTION
 	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
 	begin
 		if (rst_i == `RESET_ON)
@@ -848,7 +848,7 @@ module r2000_cpu_pipe
 		.rst_i			(rst_i)				,
 		.clk_i          (~clk_i)
 	);
-`endif	//CP0
+`endif	//EXCEPTION
 
 	/* *************** */
 	/* MEM/WB PIPELINE */

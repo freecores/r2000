@@ -165,7 +165,7 @@ module r2000_pipe_ctrl
 			{							EX_freeze	, MEM_freeze	, WB_freeze}	= {					`HIGH,	`HIGH,	`HIGH};
 			{			IFID_flush	,	IDEX_flush	, EXMEM_flush	, MEMWB_flush}	= {			`LOW,	`LOW,	`LOW,	`LOW};
 		
-`ifdef	CP0
+`ifdef	EXCEPTION
 
 		if (Event_Exception) begin
 			{			IFID_flush	,	IDEX_flush	, EXMEM_flush	, MEMWB_flush}	= {			`HIGH,	`HIGH,	`HIGH,	`HIGH};
@@ -173,7 +173,7 @@ module r2000_pipe_ctrl
 		// else
 		// Exception event must be treated CONCURRENTLY with the other event that stall the pipeline.
 		
-`endif	//CP0
+`endif	//EXCEPTION
 
 		if(Event_DCacheMiss) begin
 			{IF_stall,	IFID_stall	,	IDEX_stall	, EXMEM_stall	, MEMWB_flush}	= {	`HIGH,	`HIGH,	`HIGH,	`HIGH,	`HIGH};

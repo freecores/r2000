@@ -56,9 +56,9 @@ module	r2000_branchdecoder
 		BranchType_i	,	// Branch Type from instruction decoder
 		CondSel_i		,	// Branch Condition  from instruction decoder
 		Status_i		,	// Status flags grom the Alu (or comparator)
-`ifdef	CP0
+`ifdef	EXCEPTION
 		Exception_i		,	// Exception has occured
-`endif	//CP0
+`endif	//EXCEPTION
 		/* Output */
 //		BrDetect,
 		BranchSel_o			// Selection value for the mux pc
@@ -71,9 +71,9 @@ module	r2000_branchdecoder
 	input [3:0]					CondSel_i		;
 	input [3:0]					Status_i		;
 	
-`ifdef	CP0
+`ifdef	EXCEPTION
 	input 						Exception_i		;
-`endif	//CP0
+`endif	//EXCEPTION
 
 	output[`SELWIDTH-1:0]		BranchSel_o		;
 //	output				BrDetect		;
@@ -155,9 +155,9 @@ module	r2000_branchdecoder
 						;
 */	
 	assign BranchSel_o = 
-`ifdef	CP0
+`ifdef	EXCEPTION
 						(Exception_i) ? `BRANCH_EXCEPTION:
-`endif	//CP0
+`endif	//EXCEPTION
 						rBranchSel;
 										
 endmodule

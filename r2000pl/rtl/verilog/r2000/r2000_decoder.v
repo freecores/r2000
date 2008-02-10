@@ -346,11 +346,11 @@ module	r2000_decoder
 			`jal		:	RegDst_o <= 2;
 			`regimm		:	if ((ct == `bgezal) || (ct == `bltzal))
 								RegDst_o <= 2; else RegDst_o <= 0;
-`ifdef	CP0
+`ifdef	EXCEPTION
 			`cop0		:	if (rs ==`mf) //MFC0
 								RegDst_o <= 1; else 
 								RegDst_o <= 0;
-`endif	//CP0				
+`endif	//EXCEPTION				
 			default		:	RegDst_o <= 0;
 		endcase
 	end

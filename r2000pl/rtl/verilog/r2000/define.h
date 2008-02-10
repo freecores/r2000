@@ -59,7 +59,7 @@
 `define ICACHE				// Use the Instruction Cache
 `define DCACHE				// Use the Data Cache
 
-`define CP0					// Co processor 0
+`define EXCEPTION					// Co processor 0
 
 /* Length of memories */
 `define TAILLE_CODE	100*1024
@@ -270,7 +270,7 @@
 `define valid		32		// position 
 `define dirty		33		// position
 
-`ifdef CP0
+`ifdef EXCEPTION
 	/* ************** */
 	/* Co-Processor 0 */
 	/* ************** */
@@ -290,7 +290,7 @@
 	
 	`define	GRL_VECTOR_BEV	`dw'hBFC0_0380
 	`define	GRL_VECTOR		`dw'h0000_0ec0//`dw'h8000_0180
-`endif //CP0
+`endif //EXCEPTION
 
 	// I/O
 `define UART_WRITE        			32'h01000000//32'h20000000
@@ -302,7 +302,7 @@
 /* ******************* */
 /* BRANCH DECODER MUXC */
 /* ******************* */
-`ifdef CP0
+`ifdef EXCEPTION
 	`define	SELWIDTH		3
 `else
 	`define	SELWIDTH		2
@@ -312,7 +312,7 @@
 `define BRANCH_REG			`SELWIDTH'd1
 `define BRANCH_COND			`SELWIDTH'd2
 `define BRANCH_UNCOND		`SELWIDTH'd3
-`ifdef CP0
+`ifdef EXCEPTION
 `define BRANCH_EXCEPTION	`SELWIDTH'd4
 `endif
 
@@ -342,4 +342,7 @@
 /* ************************* */
 /* MULTIPLE ARITHEMTIC UNITS */
 /* ************************* */
-//`define MULTIPLE_ALU
+`ifdef EXCEPTION
+`else
+`define MULTIPLE_ALU
+`endif
