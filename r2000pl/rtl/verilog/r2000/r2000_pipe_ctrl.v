@@ -65,6 +65,7 @@ module r2000_pipe_ctrl
 		id_ctl_exe_op_i,
 				
 		/* Output */
+		stall_o			,
 		IF_stall		,	IFID_stall		,	IDEX_stall	,	EXMEM_stall	,	MEMWB_stall	,
 		EX_freeze		,	MEM_freeze		,	WB_freeze	,
 		IFID_flush		,	IDEX_flush		,	EXMEM_flush	,	MEMWB_flush
@@ -91,6 +92,8 @@ module r2000_pipe_ctrl
 	input [2:0]			id_ctl_exe_op_i		;
 
 	output
+		stall_o			,
+		
 		IF_stall		,	IFID_stall		,	IDEX_stall	,	EXMEM_stall	,	MEMWB_stall	,
 		EX_freeze		,	MEM_freeze		,	WB_freeze	,
 		IFID_flush		,	IDEX_flush		,	EXMEM_flush	,	MEMWB_flush
@@ -186,5 +189,7 @@ module r2000_pipe_ctrl
 
 		end		
 	end
+	
+	assign stall_o = Event_DCacheMiss || Event_ICacheMiss || Event_MultDivInterlock || Event_RawHazard;
 	
 endmodule

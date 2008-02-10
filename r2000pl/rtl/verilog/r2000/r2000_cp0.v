@@ -87,6 +87,7 @@ module	r2000_cp0
 		
 		
 		// System signals
+		stall_i			,	// stall
 		rst_i			,
 		clk_i
 	);
@@ -112,6 +113,7 @@ module	r2000_cp0
 	
 	input				rfe_i		;
 	
+	input				stall_i		;
 	input				rst_i		;
 	input				clk_i		;
 	
@@ -139,7 +141,10 @@ module	r2000_cp0
 	/* CAUSE Register format fields */
 //	wire	[4:0]	ExcCode	= rCAUSE[`ExcCode]	;	// Exception Code
 //	wire	[7:0]	IP		= rCAUSE[15:8]	;	// Interrupt Pending
-	
+
+	reg				wStall			;
+		
+	wire			ExceptionP		;	// Exception PreComputed
 	reg				Exception		;	// Exception occured signal
 	
 	wire			ptrSTATUS
@@ -153,16 +158,26 @@ module	r2000_cp0
 /* -------------------------------------------------------------- */
 /* instances, statements */
 /* --------------------- */
+	// Set "Exception sign" active until all Stalls are completed.
+	always@(rst_i, stall_i, Exception)
+		if ((rst_i) || (!stall_i))
+			wStall = 0;
+		else if ((stall_i) && Exception )
+			wStall = 1;
 
 	assign {KUo, IEo, KUp, IEp, KUc, IEc} = rSTATUS[5:0];
 
 	// Exception if Interrupt pending AND Not Masked AND Current Interrupt Enable
 //	assign Exception = ((IP & IM) || OVF_i || SYS_i || SI_i) && IEc;
+
+	assign ExceptionP = ((rCAUSE[`IP] & rSTATUS[`IM]) || OVF_i || SYS_i || SI_i) && IEc;
 	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
 		if (rst_i)
 			Exception = `CLEAR;
+		else if (wStall)
+			Exception = Exception;
 		else
-			Exception = ((rCAUSE[`IP] & rSTATUS[`IM]) || OVF_i || SYS_i || SI_i) && IEc;
+			Exception = ExceptionP;
 				
 	// Used for "Stall the pipeline"
 	assign Exception_o = Exception;
@@ -178,6 +193,8 @@ module	r2000_cp0
 			rSTATUS = `ZERO;
 			rSTATUS[`BEV] = `SET;
 		end
+		else if (wStall)
+			rSTATUS = rSTATUS;
 		else if (ptrSTATUS && rw_i)
 			rSTATUS = data_i;
 		else if (Exception)
@@ -196,6 +213,8 @@ module	r2000_cp0
 		if (rst_i) begin
 			rCAUSE = `ZERO;
 		end
+		else if (wStall)
+			rCAUSE = rCAUSE;
 //		else if (ptr_CAUSE && rw_i)
 //			rCAUSE = data_i;
 		else if (Exception)
@@ -247,6 +266,8 @@ module	r2000_cp0
 	begin
 		if (rst_i)
 			rEPC = `ZERO;
+		else if (wStall)
+			rEPC = rEPC;
 		else if (Exception)
 			rEPC = EPC_i;// + 4;
 	end

@@ -261,6 +261,8 @@ module r2000_cpu_pipe
 	
 	wire				wException			;
 	wire [`dw-1:0]		WB_cp0_dout			;
+	
+	wire				stall_global		;
 `endif	//EXCEPTION	
 	
 /* --------------------------------------------------------------
@@ -296,6 +298,8 @@ module r2000_cpu_pipe
 		.id_ctl_exe_op_i	(ID_ctl_execution_op)	,
 				
 		/* Output */
+		.stall_o		(stall_global),
+		
 		.IF_stall		(IF_stall)	,	.IFID_stall		(IFID_stall),	.IDEX_stall	(IDEX_stall),	.EXMEM_stall	(EXMEM_stall),	.MEMWB_stall	(MEMWB_stall),
 		.EX_freeze		(EX_freeze)	,	.MEM_freeze		(MEM_freeze),	.WB_freeze	(WB_freeze)	,                 
 		.IFID_flush		(IFID_flush),	.IDEX_flush		(IDEX_flush),	.EXMEM_flush(EXMEM_flush),	.MEMWB_flush    (MEMWB_flush)
@@ -847,8 +851,9 @@ module r2000_cpu_pipe
 		.PC_vec_o		(wEPC_Vector)		,	// Exception Vector
 		
 		// System signals
+		.stall_i		(stall_global)		,
 		.rst_i			(rst_i)				,
-		.clk_i          (~clk_i)
+		.clk_i          (clk_i)
 	);
 `endif	//EXCEPTION
 
