@@ -824,27 +824,29 @@ module r2000_cpu_pipe
 	(
 		// Register transfert
 		.rw_i			(MEM_clt_CoMt)		,	// Read/Write Signal
-		.addr_i			(MEM_rd_index)		,	// Adress of the register Write
+		.addr_rw_i		(MEM_rd_index)		,	// Adress of the register Write
 		.data_i			(MEM_RegDatain)		,	// Data in the register
 		
-		.addr_o			(ID_rd_index)		,	// Adress of the register Read
+		.addr_rd_i		(ID_rd_index)		,	// Adress of the register Read
 		.data_o			(MEM_cp0_dout)		,	// Data out of the register
 		
+		.rfe_i			(MEM_clt_rfe)		,	// Signal of the rfe instruction
+		
+		// Exception events signals
 		.brch_i			(MEM_branch_Slot)	,	// Detect exception in Branch Slot 
-		// Exception signals
+		
 		.OVF_i			(MEM_sig_ovf)		,	// Overflow exception
 		.SYS_i			(MEM_sig_clt_sys)	,	// System exception
 		.INT_i			(MEM_sig_int)		,	// Interrupt interrupt
 		.SI_i			(MEM_sig_si)		,	//
 		
-		.EPC_i			(MEM_EPC)			,	// PC to EPC
-		
+		// Exception control signals
 		.Exception_o	(wException)		,	// Exception occured
+		
+		.EPC_i			(MEM_EPC)			,	// PC to EPC
 		.PC_vec_o		(wEPC_Vector)		,	// Exception Vector
 		
-		.rfe_i			(MEM_clt_rfe)		,	// Signal of the rfe instruction
-		
-		// System
+		// System signals
 		.rst_i			(rst_i)				,
 		.clk_i          (~clk_i)
 	);

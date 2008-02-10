@@ -440,3 +440,10 @@ date 		: 	13-01-2008
 09-02-2008
 - To simplify the exception traitement: Instruction are executed serialy.
 - Exception event must be treated CONCURRENTLY with the other event that stall the pipeline.
+
+10-02-2008
+- UnFonctional Modifications.
+- Change the "CP0" define to "EXCEPTION".
+- Exception/interruption signals must be stalled, flushed, stoped or cleared(except reset)
+	- Look at 14-07-2007
+- UnFonctional Modifications: Change the name of the address port of "CP0".

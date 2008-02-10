@@ -63,27 +63,30 @@ module	r2000_cp0
 	(
 		// Register transfert
 		rw_i			,	// Read/Write Signal
-		addr_i			,	// Adress of the register Write
+		addr_rw_i		,	// Adress of the register Write
 		data_i			,	// Data in the register
 
-		addr_o			,	// Adress of the register Read
+		addr_rd_i		,	// Adress of the register Read
 		data_o			,	// Data out of the register
 		
-		// Exception
+		rfe_i			,	// Signal of the rfe instruction
+		
+		// Exception events signals
 		brch_i			,	// Detect exception in Branch Slot 
 		
 		OVF_i			,	// Overflow exception
 		SYS_i			,	// System exception
 		INT_i			,	// Interrupt exception
 		SI_i			,	// 
+
+		// Exception control signals
 		Exception_o		,	// Exception occured
 		
 		EPC_i			,	// PC to EPC
 		PC_vec_o		,	// Exception Vector
 		
-		rfe_i			,	// Signal of the rfe instruction
 		
-		// System
+		// System signals
 		rst_i			,
 		clk_i
 	);
@@ -92,8 +95,8 @@ module	r2000_cp0
 /* in, out declaration */
 /* ------------------- */
 	input				rw_i		;
-	input[4:0]			addr_i		;	// Adress of the register Write
-	input[4:0]			addr_o		;	// Adress of the register Read
+	input[4:0]			addr_rw_i	;	// Adress of the register Write
+	input[4:0]			addr_rd_i	;	// Adress of the register Read
 	input[`dw-1:0]		data_i		;
 	output[`dw-1:0]		data_o		;
 
@@ -167,7 +170,7 @@ module	r2000_cp0
 	/* ************************* */
 	/* STATUS Register statement */
 	/* ************************* */
-	assign ptrSTATUS = (addr_i == `STATUS_adr);
+	assign ptrSTATUS = (addr_rw_i == `STATUS_adr);
 
 	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
 	begin
@@ -186,7 +189,7 @@ module	r2000_cp0
 	/* ************************ */
 	/* CAUSE Register statement */
 	/* ************************ */
-//	assign ptr_CAUSE = (addr_i == `CAUSE_adr);
+//	assign ptr_CAUSE = (addr_rw_i == `CAUSE_adr);
 
 	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
 	begin
@@ -238,7 +241,7 @@ module	r2000_cp0
 	/* ********************** */
 	/* EPC Register statement */
 	/* ********************** */
-//	assign ptr_EPC = (addr_i == `EPC_adr);
+//	assign ptr_EPC = (addr_rw_i == `EPC_adr);
 	
 	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
 	begin
@@ -250,10 +253,10 @@ module	r2000_cp0
 	
 	// Ouput
 	assign 	data_o = 
-				(addr_o == `STATUS_adr)	? rSTATUS:
-				(addr_o == `CAUSE_adr)	? rCAUSE:
-				(addr_o == `EPC_adr)	? rEPC:
-										 `ZERO;	
+				(addr_rd_i == `STATUS_adr)	? rSTATUS:
+				(addr_rd_i == `CAUSE_adr)	? rCAUSE:
+				(addr_rd_i == `EPC_adr)		? rEPC:
+											  `ZERO;	
 	assign PC_vec_o = rPC_vec;
 	
 	
