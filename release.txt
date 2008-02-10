@@ -444,7 +444,8 @@ date 		: 	13-01-2008
 10-02-2008
 - UnFonctional Modifications.
 - Change the "CP0" define to "EXCEPTION".
-- Exception/interruption signals must be stalled, flushed, stoped or cleared(except reset)
+- Exception signals must be stalled, flushed, stoped or cleared(except reset)
 	- Look at 14-07-2007
+	- except the asynchronous event like "external interruption"
 - UnFonctional Modifications: Change the name of the address port of "CP0".
 - Read/Write of the CP0 register is in the WB stage, but Exception detection begin from the MEM stage.
