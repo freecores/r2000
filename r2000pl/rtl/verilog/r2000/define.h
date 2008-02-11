@@ -286,7 +286,7 @@
 	`define	RST_VECTOR		`dw'hBFC0_0000
 	
 	`define	INT_VECTOR_BEV	`dw'hBFC0_0400
-	`define	INT_VECTOR		`dw'h0000_0ec0//`dw'h8000_0200
+	`define	INT_VECTOR		`dw'h0000_0ebc//`dw'h8000_0200
 	
 	`define	GRL_VECTOR_BEV	`dw'hBFC0_0380
 	`define	GRL_VECTOR		`dw'h0000_0ec0//`dw'h8000_0180

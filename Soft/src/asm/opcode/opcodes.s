@@ -40,7 +40,7 @@ entry:
 
 
 #CP0 test
-#	ori   $at,$0,0x1		#enable interrupts
+	ori   $at,$0,0x1		#enable interrupts
 	ori   $at,$at,0x400		#mask interrupts
 	mtc0  $at,$12			#status	
 #CP0 test end
@@ -1230,7 +1230,7 @@ $DONE:
 	.ent	interrupt_service_routine
    
 #	.ktext 0x80000080
-#	.text# 0x00001080
+	.text #0x00001080
 interrupt_service_routine:
    .set noreorder
    
@@ -1240,6 +1240,27 @@ interrupt_service_routine:
 	# Save registers	
 
 	# Exception Code
+	sb    $23,0($20)		#UART		#CR
+	ori   $2,$0,'E'
+	sb    $2,0($20)		#UART	
+	ori   $2,$0,'x'
+	sb    $2,0($20)		#UART	
+	ori   $2,$0,'c'
+	sb    $2,0($20)		#UART	
+	ori   $2,$0,'e'
+	sb    $2,0($20)		#UART	
+	ori   $2,$0,'p'
+	sb    $2,0($20)		#UART	
+	ori   $2,$0,'t'
+	sb    $2,0($20)		#UART	
+	ori   $2,$0,'i'
+	sb    $2,0($20)		#UART	
+	ori   $2,$0,'o'
+	sb    $2,0($20)		#UART	
+	ori   $2,$0,'n'
+	sb    $2,0($20)		#UART
+	sb    $23,0($20)		#UART		#CR
+	
 #	addiu	$v0, $0, 4		# syscall 4 (print_str)
 #	la		$a0, __m1_
 #	syscall

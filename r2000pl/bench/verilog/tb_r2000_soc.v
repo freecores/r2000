@@ -104,10 +104,10 @@ module tb_r2000_soc;
 		.RAM_bleh_o		(SRAM_Bleh)		,	// Byte Memory Low enable
 		.RAM_bheh_o		(SRAM_Bheh)		,	// Byte Memory High Enable
 		                
-`ifdef	CP0
+`ifdef	EXCEPTION
 		.SIG_int_i		(sig_int)		,	// Interrupt exception
 		.SIG_si_i		(sig_si)		,	// Software Interrupt
-`endif	//CP0
+`endif	//EXCEPTION
 
 		.clk_i			(clk)			,	// Clock
 		.rst_i			(rst)				// Reset
@@ -242,8 +242,8 @@ module tb_r2000_soc;
 		$readmemh("../../../bench/code/opcodes_sraml1.txt", SRAMl.mem1);
 		$readmemh("../../../bench/code/opcodes_sraml2.txt", SRAMl.mem2);
 `else
-//		$readmemh("../../../bench/code/opcodes_sraml.txt", SRAMl.mem);
-		$readmemh("../../../bench/code/dhry21_sraml.txt", SRAMl.mem);
+		$readmemh("../../../bench/code/opcodes_sraml.txt", SRAMl.mem);
+//		$readmemh("../../../bench/code/dhry21_sraml.txt", SRAMl.mem);
 //		$readmemh("../../../bench/code/rtos_sraml.txt", SRAMl.mem);
 //		$readmemh("../../../bench/code/rs_tak_sraml.txt", SRAMl.mem);
 //		$readmemh("../../../bench/code/pi_sraml.txt", SRAMl.mem);
@@ -256,8 +256,8 @@ module tb_r2000_soc;
 		$readmemh("../../../bench/code/opcodes_sramh1.txt", SRAMh.mem1);
 		$readmemh("../../../bench/code/opcodes_sramh2.txt", SRAMh.mem2);
 `else
-//		$readmemh("../../../bench/code/opcodes_sramh.txt", SRAMh.mem);
-		$readmemh("../../../bench/code/dhry21_sramh.txt", SRAMh.mem);
+		$readmemh("../../../bench/code/opcodes_sramh.txt", SRAMh.mem);
+//		$readmemh("../../../bench/code/dhry21_sramh.txt", SRAMh.mem);
 //		$readmemh("../../../bench/code/rtos_sramh.txt", SRAMh.mem);
 //		$readmemh("../../../bench/code/rs_tak_sramh.txt", SRAMh.mem);
 //		$readmemh("../../../bench/code/pi_sramh.txt", SRAMh.mem);
@@ -279,9 +279,9 @@ module tb_r2000_soc;
 //		   #(1220*`PERIODE_CLK) // 12.2 us
 //		    #(550*`PERIODE_CLK) //  5.5 us
 //		   #(2000*`PERIODE_CLK) // 20.0 us
-//		   #(5500*`PERIODE_CLK) // 55.0 us
+		   #(7500*`PERIODE_CLK) // 75.0 us
 //		  #(44000*`PERIODE_CLK) // 0.44 ms
-		 #(100000*`PERIODE_CLK) // 10 ms
+//		 #(100000*`PERIODE_CLK) // 10 ms
 //	   #(20000000*`PERIODE_CLK) // 200 ms
 		
 		$stop;// Stop simulation
