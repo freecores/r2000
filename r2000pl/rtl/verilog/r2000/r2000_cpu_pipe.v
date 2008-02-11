@@ -576,25 +576,25 @@ module r2000_cpu_pipe
 	r2000_pipe #(  1) IDEX_ctl_reg_src_pipe 		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_clt_reg_src)			,	.Q_o(EX_clt_reg_src) );
 	
 	/* DATAPATH */
-	r2000_pipe #(`dw) IDEX_pc_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_PCplus8)				,	.Q_o(EX_PCplus8) );
+	r2000_pipe #(`dw) IDEX_pc_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_PCplus8)				,	.Q_o(EX_PCplus8) );
 	r2000_pipe #(`dw) IDEX_inst_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_inst)					,	.Q_o(EX_inst) );
                                         			                                                                                                        		        	
-	r2000_pipe #(`dw) IDEX_rs_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_reg_rs_forward) 		,	.Q_o(EX_reg_rs) );
-	r2000_pipe #(`dw) IDEX_rt_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_reg_rt_forward) 		,	.Q_o(EX_reg_rt) );
+	r2000_pipe #(`dw) IDEX_rs_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_reg_rs_forward) 		,	.Q_o(EX_reg_rs) );
+	r2000_pipe #(`dw) IDEX_rt_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_reg_rt_forward) 		,	.Q_o(EX_reg_rt) );
                                         			                                                                          		                           	
-	r2000_pipe #(`dw) IDEX_se_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_signextend)			,	.Q_o(EX_signextend) );
-	r2000_pipe #(`dw) IDEX_ze_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_zeroextend)			,	.Q_o(EX_zeroextend) );
-	r2000_pipe #(`dw) IDEX_up_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_imup)					,	.Q_o(EX_imup) );
-	r2000_pipe #(`iw) IDEX_rd_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_mux_rd_index_out)		,	.Q_o(EX_rd_index) );
+	r2000_pipe #(`dw) IDEX_se_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_signextend)			,	.Q_o(EX_signextend) );
+	r2000_pipe #(`dw) IDEX_ze_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_zeroextend)			,	.Q_o(EX_zeroextend) );
+	r2000_pipe #(`dw) IDEX_up_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_imup)					,	.Q_o(EX_imup) );
+	r2000_pipe #(`iw) IDEX_rd_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_mux_rd_index_out)		,	.Q_o(EX_rd_index) );
 	                                                                                                                                                        	
 `ifdef	EXCEPTION                                                                                                                                                 	
 	r2000_pipe #(  1) IDEX_sig_brk_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_sig_clt_brk)			,	.Q_o(EX_sig_clt_brk) );
 	r2000_pipe #(  1) IDEX_sig_sys_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_sig_clt_sys)			,	.Q_o(EX_sig_clt_sys) );
 	                                                                                                                                                        	
-	r2000_pipe #(  1) IDEX_rfe_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_clt_rfe)				,	.Q_o(EX_clt_rfe) );
-	r2000_pipe #(  1) IDEX_comt_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_clt_CoMt)				,	.Q_o(EX_clt_CoMt) );
-	r2000_pipe #(`dw) IDEX_epc_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_EPC)					,	.Q_o(EX_EPC) );
-	r2000_pipe #(`SELWIDTH) IDEX_brc_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_mux_branch_sel)		,	.Q_o(EX_mux_branch_sel) );
+	r2000_pipe #(  1) IDEX_rfe_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_clt_rfe)				,	.Q_o(EX_clt_rfe) );
+	r2000_pipe #(  1) IDEX_comt_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_clt_CoMt)				,	.Q_o(EX_clt_CoMt) );
+	r2000_pipe #(`dw) IDEX_epc_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_EPC)					,	.Q_o(EX_EPC) );
+	r2000_pipe #(`SELWIDTH) IDEX_brc_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_mux_branch_sel)		,	.Q_o(EX_mux_branch_sel) );
 `endif	//EXCEPTION
 	/*======================================================================================================================================================*/
 	/*	EX:Execution STAGE								*/
@@ -723,8 +723,8 @@ module r2000_cpu_pipe
 `ifdef	EXCEPTION
 	r2000_pipe #(  1) EXMEM_sig_brk_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush)	, .D_i(EX_sig_clt_brk)		,	.Q_o(MEM_sig_clt_brk) );
 	r2000_pipe #(  1) EXMEM_sig_sys_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush)	, .D_i(EX_sig_clt_sys)		,	.Q_o(MEM_sig_clt_sys) );
-	r2000_pipe #(  6) EXMEM_sig_int_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR)		, .D_i(sig_int_i)			,	.Q_o(MEM_sig_int) );
-	r2000_pipe #(  2) EXMEM_sig_si_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR)		, .D_i(sig_si_i)			,	.Q_o(MEM_sig_si) );
+	r2000_pipe #(  6) EXMEM_sig_int_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(EXMEM_flush)	, .D_i(sig_int_i)			,	.Q_o(MEM_sig_int) );
+	r2000_pipe #(  2) EXMEM_sig_si_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(EXMEM_flush)	, .D_i(sig_si_i)			,	.Q_o(MEM_sig_si) );
 	r2000_pipe #(  1) EXMEM_sig_ovf_pipe 		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush)	, .D_i(EX_sig_ovf)			,	.Q_o(MEM_sig_ovf) );
 
 	r2000_pipe #(  1) EXMEM_comt_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_clt_CoMt)			,	.Q_o(MEM_clt_CoMt) );

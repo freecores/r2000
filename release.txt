@@ -452,3 +452,6 @@ date 		: 	13-01-2008
 
 - Modification of CP0 to wait the end of all stalls before to process Exception.
 - Set "Exception sign" active until all Stalls are completed.
+
+11-02-2008
+- Flush must be on all signals in the pipeline.
