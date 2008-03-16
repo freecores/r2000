@@ -242,7 +242,8 @@ module tb_r2000_soc;
 		$readmemh("../../../bench/code/opcodes_sraml1.txt", SRAMl.mem1);
 		$readmemh("../../../bench/code/opcodes_sraml2.txt", SRAMl.mem2);
 `else
-		$readmemh("../../../bench/code/opcodes_sraml.txt", SRAMl.mem);
+//		$readmemh("../../../bench/code/opcodes_sraml.txt", SRAMl.mem);
+		$readmemh("../../../bench/code/exception_sraml.txt", SRAMl.mem);
 //		$readmemh("../../../bench/code/dhry21_sraml.txt", SRAMl.mem);
 //		$readmemh("../../../bench/code/rtos_sraml.txt", SRAMl.mem);
 //		$readmemh("../../../bench/code/rs_tak_sraml.txt", SRAMl.mem);
@@ -256,7 +257,8 @@ module tb_r2000_soc;
 		$readmemh("../../../bench/code/opcodes_sramh1.txt", SRAMh.mem1);
 		$readmemh("../../../bench/code/opcodes_sramh2.txt", SRAMh.mem2);
 `else
-		$readmemh("../../../bench/code/opcodes_sramh.txt", SRAMh.mem);
+//		$readmemh("../../../bench/code/opcodes_sramh.txt", SRAMh.mem);
+		$readmemh("../../../bench/code/exception_sramh.txt", SRAMh.mem);
 //		$readmemh("../../../bench/code/dhry21_sramh.txt", SRAMh.mem);
 //		$readmemh("../../../bench/code/rtos_sramh.txt", SRAMh.mem);
 //		$readmemh("../../../bench/code/rs_tak_sramh.txt", SRAMh.mem);
@@ -265,11 +267,10 @@ module tb_r2000_soc;
 //		$readmemh("../../../bench/code/torture_sramh.txt", SRAMh.mem);
 `endif
 		
-			clk = 1'b0; rst = 1'b1; sig_int	= 6'b0; sig_si	= 2'b0;
-		#1				rst = 1'b1;
-		#`PERIODE_CLK	rst = 1'b0;
+			clk = `LOW; rst = `HIGH; sig_int	= `LOW; sig_si	= 2'b0;
+		#`PERIODE_CLK	rst = `LOW;
 		
-		#(0965*`PERIODE_CLK) sig_int = 1; #(2*`PERIODE_CLK)	sig_int = 0;
+		#((0956-1)*`PERIODE_CLK+20) sig_int = `HIGH; #(1*`PERIODE_CLK)	sig_int = `LOW;
 		
 	end
 
@@ -277,9 +278,9 @@ module tb_r2000_soc;
 	initial begin
 //		$monitor("PC:%h ",UUT.wMem_code_addr);		
 //		   #(1220*`PERIODE_CLK) // 12.2 us
-//		    #(550*`PERIODE_CLK) //  5.5 us
-//		   #(2000*`PERIODE_CLK) // 20.0 us
-		   #(7500*`PERIODE_CLK) // 75.0 us
+//		    #(150*`PERIODE_CLK) //  1.5 us
+		   #(1300*`PERIODE_CLK) // 13.0 us
+//		   #(7500*`PERIODE_CLK) // 75.0 us
 //		  #(44000*`PERIODE_CLK) // 0.44 ms
 //		 #(100000*`PERIODE_CLK) // 10 ms
 //	   #(20000000*`PERIODE_CLK) // 200 ms

@@ -98,10 +98,11 @@ vlog ../../../bench/verilog/tb_r2000_soc.v				+incdir+../../../rtl/verilog/r2000
 # Simulate #
 # -------- #
 # the soc processor
-vsim -t 1ps tb_r2000_soc
+vsim tb_r2000_soc
 
 #do {r2000pl_d-cache.udo}
-do {r2000pl_exception.udo}
+#do {r2000pl_exception.udo}
+do  {r2000pl_stall-pipeline.udo}
 
 # The viewer
 view wave

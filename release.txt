@@ -455,3 +455,18 @@ date 		: 	13-01-2008
 
 11-02-2008
 - Flush must be on all signals in the pipeline.
+
+02-03-2008
+- Add "WB_EPC" in the Write Back stage
+10-03-2008
+- when freeze or stall; don't let memory operations
+	- 
+16-03-2008
+- Modification on the CP0
+	- The CP0 is deplaced in the WB stage
+	- The INT, SI event signals are treated asynchronously in the WB stage
+	- The rCAUSE register is asynchronous now
+	- The wException signal is asyncronous instantanously
+	- Add a repeat/continous treatement (not completed yet)
+
+	- *** The "INT EXCEPTION NO STALL" work correctly

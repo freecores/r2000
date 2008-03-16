@@ -82,7 +82,9 @@ module	r2000_cp0
 		// Exception control signals
 		Exception_o		,	// Exception occured
 		
-		EPC_i			,	// PC to EPC
+		EPC_rpt_i		,	// PC to EPC repeat
+		EPC_ctn_i		,	// PC to EPC continue
+		
 		PC_vec_o		,	// Exception Vector
 		
 		
@@ -108,7 +110,8 @@ module	r2000_cp0
 	input[1:0]			SI_i		;	//
 	output				Exception_o	;
 		
-	input[`dw-1:0]		EPC_i		;
+	input[`dw-1:0]		EPC_rpt_i	;
+	input[`dw-1:0]		EPC_ctn_i	;
 	output[`dw-1:0]		PC_vec_o	;
 	
 	input				rfe_i		;
@@ -144,13 +147,14 @@ module	r2000_cp0
 
 	reg				wStall			;
 		
-	wire			ExceptionP		;	// Exception PreComputed
-	reg				Exception		;	// Exception occured signal
+	wire			wExceptionDetect;	// Exception Detection
+	reg				rExceptionSave	;	// Store the Exception signal while pipeline stall
 	
-	wire			ptrSTATUS
-//					, ptr_CAUSE
-//					, ptr_EPC
-					;
+	wire			wException		;	// Exception occured signal
+
+	wire			wRepeat			;	// Repeat or continue type of exception
+	
+	wire			ptrSTATUS		;
 
 	reg[`dw-1:0]	rPC_vec = `ZERO;
 	
@@ -158,29 +162,32 @@ module	r2000_cp0
 /* -------------------------------------------------------------- */
 /* instances, statements */
 /* --------------------- */
+
+	assign	wRepeat = `LOW;
+
 	// Set "Exception sign" active until all Stalls are completed.
-	always@(rst_i, stall_i, Exception)
-		if ((rst_i) || (!stall_i))
-			wStall = 0;
-		else if ((stall_i) && Exception )
-			wStall = 1;
+	always@(rst_i, stall_i, wException)
+		if (rst_i || !stall_i)
+			wStall = `LOW;
+		else if (stall_i && wException )
+			wStall = `HIGH;
 
 	assign {KUo, IEo, KUp, IEp, KUc, IEc} = rSTATUS[5:0];
 
 	// Exception if Interrupt pending AND Not Masked AND Current Interrupt Enable
-//	assign Exception = ((IP & IM) || OVF_i || SYS_i || SI_i) && IEc;
 
-	assign ExceptionP = ((rCAUSE[`IP] & rSTATUS[`IM]) || OVF_i || SYS_i || SI_i) && IEc;
+	assign wExceptionDetect = ((rCAUSE[`IP] & rSTATUS[`IM]) || OVF_i || SYS_i || SI_i) && IEc;
 	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
 		if (rst_i)
-			Exception = `CLEAR;
+			rExceptionSave = `CLEAR;
 		else if (wStall)
-			Exception = Exception;
+			rExceptionSave = rExceptionSave;
 		else
-			Exception = ExceptionP;
+			rExceptionSave = wExceptionDetect;
+	assign wException = wExceptionDetect;
 				
 	// Used for "Stall the pipeline"
-	assign Exception_o = Exception;
+	assign Exception_o = wException || rExceptionSave;
 	
 	/* ************************* */
 	/* STATUS Register statement */
@@ -197,7 +204,7 @@ module	r2000_cp0
 			rSTATUS = rSTATUS;
 		else if (ptrSTATUS && rw_i)
 			rSTATUS = data_i;
-		else if (Exception)
+		else if (wException)
 			rSTATUS[5:0] = {rSTATUS[3:0],2'b0};
 		else if (rfe_i)
 			rSTATUS[3:0] = rSTATUS[5:2];
@@ -206,18 +213,15 @@ module	r2000_cp0
 	/* ************************ */
 	/* CAUSE Register statement */
 	/* ************************ */
-//	assign ptr_CAUSE = (addr_rw_i == `CAUSE_adr);
-
-	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
+//	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
+	always@(rst_i, wStall, wException, INT_i, SI_i)// Asynchrone
 	begin
 		if (rst_i) begin
 			rCAUSE = `ZERO;
 		end
 		else if (wStall)
 			rCAUSE = rCAUSE;
-//		else if (ptr_CAUSE && rw_i)
-//			rCAUSE = data_i;
-		else if (Exception)
+		else if (wException)
 		begin
 				if (SYS_i) begin
 					rCAUSE[`ExcCode]	=	`SYS_MNE;
@@ -236,9 +240,9 @@ module	r2000_cp0
 	/* ************************ */
 	/* Vector statement: Gated */
 	/* ************************ */
-	always@(Exception)
+	always@(wException)
 	begin
-		if (Exception) begin
+		if (wException) begin
 				if (SYS_i) begin
 					if (BEV)
 						rPC_vec		=	`GRL_VECTOR_BEV;
@@ -260,16 +264,17 @@ module	r2000_cp0
 	/* ********************** */
 	/* EPC Register statement */
 	/* ********************** */
-//	assign ptr_EPC = (addr_rw_i == `EPC_adr);
-	
 	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
 	begin
 		if (rst_i)
 			rEPC = `ZERO;
 		else if (wStall)
 			rEPC = rEPC;
-		else if (Exception)
-			rEPC = EPC_i;// + 4;
+		else if (wException)
+			if (wRepeat)
+				rEPC = EPC_rpt_i;	// Repeat
+			else
+				rEPC = EPC_ctn_i;	// Continue
 	end
 	
 	// Ouput

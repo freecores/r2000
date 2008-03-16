@@ -160,8 +160,8 @@ module r2000_cpu_pipe
 	wire [3:0]			ID_cmp_status		;
 	wire [`SELWIDTH-1:0]ID_mux_branch_sel	
 `ifdef	EXCEPTION
-											,	EX_mux_branch_sel	,	MEM_mux_branch_sel	;
-	reg					MEM_branch_Slot			// Detect branch slot when exception
+											,	EX_mux_branch_sel	,	MEM_mux_branch_sel	,	WB_mux_branch_sel;
+	reg					WB_branch_Slot			// Detect branch slot when exception
 `endif	//EXCEPTION	
 											;
 	
@@ -241,13 +241,13 @@ module r2000_cpu_pipe
 	wire				IFID_stall			,	IDEX_stall		,	EXMEM_stall			,	MEMWB_stall	;
 
 	// co-processor 0
-	wire				ID_sig_clt_sys		,	EX_sig_clt_sys	,	MEM_sig_clt_sys		;
-	wire				ID_sig_clt_brk		,	EX_sig_clt_brk	,	MEM_sig_clt_brk		;
+	wire				ID_sig_clt_sys		,	EX_sig_clt_sys	,	MEM_sig_clt_sys		,	WB_sig_clt_sys;
+	wire				ID_sig_clt_brk		,	EX_sig_clt_brk	,	MEM_sig_clt_brk		,	WB_sig_clt_brk;
 	wire				ID_clt_rfe			,	EX_clt_rfe		,	MEM_clt_rfe			,	WB_clt_rfe	;	
 	wire				ID_clt_CoMf			;
 	wire				ID_clt_CoMt			,	EX_clt_CoMt		,	MEM_clt_CoMt		,	WB_clt_CoMt	;
 `ifdef	EXCEPTION
-	wire [`dw-1:0]		IF_EPC				,	ID_EPC			,	EX_EPC				,	MEM_EPC		;
+	wire [`dw-1:0]		IF_EPC				,	ID_EPC			,	EX_EPC				,	MEM_EPC		,	WB_EPC		;
 	reg	 [4:0]			IF_EXC				,	ID_EXC			,	EX_EXC				,	MEM_EXC		;
 	wire [`dw-1:0]		wEPC_Vector			;
 	
@@ -255,9 +255,9 @@ module r2000_cpu_pipe
 						EX_Carry			,
 						EX_Zero				,
 						EX_Neg				;
-	wire 				EX_sig_ovf			,	MEM_sig_ovf		;
-	wire [5:0]			MEM_sig_int			;
-	wire [1:0]			MEM_sig_si			;
+	wire 				EX_sig_ovf			,	MEM_sig_ovf		,	WB_sig_ovf;
+	wire [5:0]			MEM_sig_int			,	WB_sig_int		;
+	wire [1:0]			MEM_sig_si			,	WB_sig_si		;
 	
 	wire				wException			;
 	wire [`dw-1:0]		WB_cp0_dout			;
@@ -340,12 +340,12 @@ module r2000_cpu_pipe
 	/* ************** */
 	/* CONTROL */
 	/* DATAPATH */
-	r2000_pipe #(`dw) IFID_pc_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IFID_stall) , .flush_i(IFID_flush) , .D_i(IF_PCplus4)			,	.Q_o(ID_PCplus4) );
-	r2000_pipe #(`dw) IFID_inst_pipe	(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IFID_stall) , .flush_i(IFID_flush) , .D_i(mem_code_inst_i)	,	.Q_o(ID_inst) );
+	r2000_pipe #(`dw) IFID_pc_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IFID_stall) , .flush_i(IFID_flush)	, .D_i(IF_PCplus4)			,	.Q_o(ID_PCplus4) );
+	r2000_pipe #(`dw) IFID_inst_pipe	(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IFID_stall) , .flush_i(IFID_flush)	, .D_i(mem_code_inst_i)		,	.Q_o(ID_inst) );
 
 `ifdef	EXCEPTION
 	assign	IF_EPC = wPC;
-	r2000_pipe #(`dw) IFID_epc_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IFID_stall) , .flush_i(IFID_flush) , .D_i(IF_EPC)				,	.Q_o(ID_EPC) );
+	r2000_pipe #(`dw) IFID_epc_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IFID_stall) , .flush_i(`CLEAR)		, .D_i(IF_EPC)				,	.Q_o(ID_EPC) );
 `endif	//EXCEPTION
 
 	/*======================================================================================================================================================*/
@@ -576,25 +576,25 @@ module r2000_cpu_pipe
 	r2000_pipe #(  1) IDEX_ctl_reg_src_pipe 		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_clt_reg_src)			,	.Q_o(EX_clt_reg_src) );
 	
 	/* DATAPATH */
-	r2000_pipe #(`dw) IDEX_pc_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_PCplus8)				,	.Q_o(EX_PCplus8) );
+	r2000_pipe #(`dw) IDEX_pc_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_PCplus8)				,	.Q_o(EX_PCplus8) );
 	r2000_pipe #(`dw) IDEX_inst_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_inst)					,	.Q_o(EX_inst) );
                                         			                                                                                                        		        	
-	r2000_pipe #(`dw) IDEX_rs_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_reg_rs_forward) 		,	.Q_o(EX_reg_rs) );
-	r2000_pipe #(`dw) IDEX_rt_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_reg_rt_forward) 		,	.Q_o(EX_reg_rt) );
+	r2000_pipe #(`dw) IDEX_rs_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_reg_rs_forward) 		,	.Q_o(EX_reg_rs) );
+	r2000_pipe #(`dw) IDEX_rt_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_reg_rt_forward) 		,	.Q_o(EX_reg_rt) );
                                         			                                                                          		                           	
-	r2000_pipe #(`dw) IDEX_se_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_signextend)			,	.Q_o(EX_signextend) );
-	r2000_pipe #(`dw) IDEX_ze_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_zeroextend)			,	.Q_o(EX_zeroextend) );
-	r2000_pipe #(`dw) IDEX_up_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_imup)					,	.Q_o(EX_imup) );
-	r2000_pipe #(`iw) IDEX_rd_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_mux_rd_index_out)		,	.Q_o(EX_rd_index) );
+	r2000_pipe #(`dw) IDEX_se_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_signextend)			,	.Q_o(EX_signextend) );
+	r2000_pipe #(`dw) IDEX_ze_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_zeroextend)			,	.Q_o(EX_zeroextend) );
+	r2000_pipe #(`dw) IDEX_up_pipe 					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_imup)					,	.Q_o(EX_imup) );
+	r2000_pipe #(`iw) IDEX_rd_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_mux_rd_index_out)		,	.Q_o(EX_rd_index) );
 	                                                                                                                                                        	
 `ifdef	EXCEPTION                                                                                                                                                 	
 	r2000_pipe #(  1) IDEX_sig_brk_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_sig_clt_brk)			,	.Q_o(EX_sig_clt_brk) );
 	r2000_pipe #(  1) IDEX_sig_sys_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_sig_clt_sys)			,	.Q_o(EX_sig_clt_sys) );
 	                                                                                                                                                        	
-	r2000_pipe #(  1) IDEX_rfe_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_clt_rfe)				,	.Q_o(EX_clt_rfe) );
-	r2000_pipe #(  1) IDEX_comt_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_clt_CoMt)				,	.Q_o(EX_clt_CoMt) );
-	r2000_pipe #(`dw) IDEX_epc_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_EPC)					,	.Q_o(EX_EPC) );
-	r2000_pipe #(`SELWIDTH) IDEX_brc_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(IDEX_flush)	, .D_i(ID_mux_branch_sel)		,	.Q_o(EX_mux_branch_sel) );
+	r2000_pipe #(  1) IDEX_rfe_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_clt_rfe)				,	.Q_o(EX_clt_rfe) );
+	r2000_pipe #(  1) IDEX_comt_pipe				(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_clt_CoMt)				,	.Q_o(EX_clt_CoMt) );
+	r2000_pipe #(`dw) IDEX_epc_pipe					(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_EPC)					,	.Q_o(EX_EPC) );
+	r2000_pipe #(`SELWIDTH) IDEX_brc_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(IDEX_stall)	, .flush_i(`CLEAR)		, .D_i(ID_mux_branch_sel)		,	.Q_o(EX_mux_branch_sel) );
 `endif	//EXCEPTION
 	/*======================================================================================================================================================*/
 	/*	EX:Execution STAGE								*/
@@ -723,13 +723,13 @@ module r2000_cpu_pipe
 `ifdef	EXCEPTION
 	r2000_pipe #(  1) EXMEM_sig_brk_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush)	, .D_i(EX_sig_clt_brk)		,	.Q_o(MEM_sig_clt_brk) );
 	r2000_pipe #(  1) EXMEM_sig_sys_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush)	, .D_i(EX_sig_clt_sys)		,	.Q_o(MEM_sig_clt_sys) );
-	r2000_pipe #(  6) EXMEM_sig_int_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(EXMEM_flush)	, .D_i(sig_int_i)			,	.Q_o(MEM_sig_int) );
-	r2000_pipe #(  2) EXMEM_sig_si_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(EXMEM_flush)	, .D_i(sig_si_i)			,	.Q_o(MEM_sig_si) );
+	r2000_pipe #(  6) EXMEM_sig_int_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR)		, .D_i(sig_int_i)			,	.Q_o(MEM_sig_int) );
+	r2000_pipe #(  2) EXMEM_sig_si_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR)		, .D_i(sig_si_i)			,	.Q_o(MEM_sig_si) );
 	r2000_pipe #(  1) EXMEM_sig_ovf_pipe 		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush)	, .D_i(EX_sig_ovf)			,	.Q_o(MEM_sig_ovf) );
 
 	r2000_pipe #(  1) EXMEM_comt_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_clt_CoMt)			,	.Q_o(MEM_clt_CoMt) );
 	r2000_pipe #(  1) EXMEM_rfe_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_clt_rfe)			,	.Q_o(MEM_clt_rfe) );
-	r2000_pipe #(`dw) EXMEM_epc_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_EPC)				,	.Q_o(MEM_EPC) );
+	r2000_pipe #(`dw) EXMEM_epc_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(`CLEAR)		, .D_i(EX_EPC)				,	.Q_o(MEM_EPC) );
 	r2000_pipe #(`SELWIDTH) EXMEM_brc_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(EXMEM_stall)	, .flush_i(EXMEM_flush) , .D_i(EX_mux_branch_sel)	,	.Q_o(MEM_mux_branch_sel) );
 `endif	//EXCEPTION	
 	/*======================================================================================================================================================*/
@@ -777,9 +777,9 @@ module r2000_cpu_pipe
 	// Enable
 	assign mem_data_en_o	= MEM_freeze;
 	
-	// Read write
-	assign mem_data_wr_o	= MEM_ctl_mem_write;
-	assign mem_data_rd_o	= MEM_ctl_mem_read;
+	// Read write (when freeze or stall; don't let memory operations)
+	assign mem_data_wr_o	= (MEM_freeze) ? MEM_ctl_mem_write	: `LOW;
+	assign mem_data_rd_o	= (MEM_freeze) ? MEM_ctl_mem_read	: `LOW;
 	
 	// Adress
 	assign MemDataAddrInt	= MEM_alu_out;
@@ -809,16 +809,46 @@ module r2000_cpu_pipe
 		.out_o			(MEM_RegDatain)     		//		the result write back to the registerfile
 	);
 
+	/* *************** */
+	/* MEM/WB PIPELINE */
+	/* *************** */
+	/* CONTROL */
+	// WB
+	r2000_pipe #(  1) MEMWB_ctl_reg_write_pipe 	(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_ctl_reg_write) ,	.Q_o(WB_ctl_reg_write) );
+	
+	/* DATAPATH */
+`ifdef DEBUG
+	r2000_pipe #(`dw) MEMWB_inst_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_inst)			,	.Q_o(WB_inst) );
+`endif//DEBUG                                                                                                                                  			
+	r2000_pipe #(`dw) MEMWB_regdatain_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_RegDatain)	,	.Q_o(WB_RegDatain) );
+	r2000_pipe #(`iw) MEMWB_rd_pipe 			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_rd_index)		,	.Q_o(WB_rd_index) );
+	
+`ifdef	EXCEPTION
+	r2000_pipe #(  1) MEMWB_sig_brk_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush)	, .D_i(MEM_sig_clt_brk)	,	.Q_o(WB_sig_clt_brk) );
+	r2000_pipe #(  1) MEMWB_sig_sys_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush)	, .D_i(MEM_sig_clt_sys)	,	.Q_o(WB_sig_clt_sys) );
+	r2000_pipe #(  6) MEMWB_sig_int_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR)		, .D_i(MEM_sig_int)		,	.Q_o(WB_sig_int) );
+	r2000_pipe #(  2) MEMWB_sig_si_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(`CLEAR)		, .flush_i(`CLEAR)		, .D_i(MEM_sig_si)		,	.Q_o(WB_sig_si) );
+	r2000_pipe #(  1) MEMWB_sig_ovf_pipe 		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush)	, .D_i(MEM_sig_ovf)		,	.Q_o(WB_sig_ovf) );
+
+	r2000_pipe #(  1) MEMWB_comt_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush) , .D_i(MEM_clt_CoMt)	,	.Q_o(WB_clt_CoMt) );
+	r2000_pipe #(  1) MEMWB_rfe_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush) , .D_i(MEM_clt_rfe)		,	.Q_o(WB_clt_rfe) );
+	r2000_pipe #(`dw) MEMWB_epc_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(`CLEAR)		, .D_i(MEM_EPC)			,	.Q_o(WB_EPC) );
+	r2000_pipe #(`SELWIDTH) MEMWB_brc_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush) , .D_i(MEM_mux_branch_sel)	,	.Q_o(WB_mux_branch_sel) );
+`endif	//EXCEPTION
+	/*======================================================================================================================================================*/
+	/*	WB:Write Back STAGE								*/
+	/*======================================================================================================================================================*/
+
 `ifdef	EXCEPTION
 	always@(`CLOCK_EDGE clk_i, `RESET_EDGE rst_i)
 	begin
 		if (rst_i == `RESET_ON)
-			MEM_branch_Slot = `CLEAR;
+			WB_branch_Slot = `CLEAR;
 		else
-			// Branch Slot instruction in MEM stage (see mux_pc)
-			MEM_branch_Slot = ((MEM_mux_branch_sel == 1) ||
-								(MEM_mux_branch_sel == 2) ||
-								(MEM_mux_branch_sel == 3));
+			// Branch Slot instruction in WB stage (see mux_pc)
+			WB_branch_Slot = ((WB_mux_branch_sel == 1) ||
+								(WB_mux_branch_sel == 2) ||
+								(WB_mux_branch_sel == 3));
 	end
 	
 	/*==================================================*/
@@ -837,17 +867,19 @@ module r2000_cpu_pipe
 		.rfe_i			(WB_clt_rfe)		,	// Signal of the rfe instruction
 		
 		// Exception events signals
-		.brch_i			(MEM_branch_Slot)	,	// Detect exception in Branch Slot 
+		.brch_i			(WB_branch_Slot)	,	// Detect exception in Branch Slot 
 		
-		.OVF_i			(MEM_sig_ovf)		,	// Overflow exception
-		.SYS_i			(MEM_sig_clt_sys)	,	// System exception
-		.INT_i			(MEM_sig_int)		,	// Interrupt interrupt
-		.SI_i			(MEM_sig_si)		,	//
+		.OVF_i			(WB_sig_ovf)		,	// Overflow exception
+		.SYS_i			(WB_sig_clt_sys)	,	// System exception
+		.INT_i			(WB_sig_int)		,	// Interrupt interrupt
+		.SI_i			(WB_sig_si)			,	//
 		
 		// Exception control signals
 		.Exception_o	(wException)		,	// Exception occured
 		
-		.EPC_i			(MEM_EPC)			,	// PC to EPC
+		.EPC_ctn_i		(MEM_EPC)			,	// PC to EPC continue
+		.EPC_rpt_i		(WB_EPC)			,	// PC to EPC repeat
+		
 		.PC_vec_o		(wEPC_Vector)		,	// Exception Vector
 		
 		// System signals
@@ -857,27 +889,6 @@ module r2000_cpu_pipe
 	);
 `endif	//EXCEPTION
 
-	/* *************** */
-	/* MEM/WB PIPELINE */
-	/* *************** */
-	/* CONTROL */
-	// WB
-	r2000_pipe #(  1) MEMWB_ctl_reg_write_pipe 	(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_ctl_reg_write) ,	.Q_o(WB_ctl_reg_write) );
-	
-	/* DATAPATH */
-`ifdef DEBUG
-	r2000_pipe #(`dw) MEMWB_inst_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_inst)			,	.Q_o(WB_inst) );
-`endif//DEBUG                                                                                                                                  			
-	r2000_pipe #(`dw) MEMWB_regdatain_pipe		(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_RegDatain)	,	.Q_o(WB_RegDatain) );
-	r2000_pipe #(`iw) MEMWB_rd_pipe 			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall) , .flush_i(MEMWB_flush) , .D_i(MEM_rd_index)		,	.Q_o(WB_rd_index) );
-	
-`ifdef	EXCEPTION
-	r2000_pipe #(  1) MEMWB_comt_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush) , .D_i(MEM_clt_CoMt)	,	.Q_o(WB_clt_CoMt) );
-	r2000_pipe #(  1) MEMWB_rfe_pipe			(.clk_i(clk_i) , .rst_i(rst_i) , .stall_i(MEMWB_stall)	, .flush_i(MEMWB_flush) , .D_i(MEM_clt_rfe)		,	.Q_o(WB_clt_rfe) );
-`endif	//EXCEPTION
-	/*======================================================================================================================================================*/
-	/*	WB:Write Back STAGE								*/
-	/*======================================================================================================================================================*/
 
 
 endmodule
