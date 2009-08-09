@@ -1,1 +1,0 @@
-xst -ise "C:/dev/Soc/Mips/r2000sc/syn/xilinx/run/r2000sc.ise" -intstyle ise -ifn r2000_cpu.xst -ofn r2000_cpu.syr
